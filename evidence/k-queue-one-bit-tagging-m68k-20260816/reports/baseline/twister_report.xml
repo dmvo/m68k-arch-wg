@@ -1,0 +1,2183 @@
+<testsuites>
+	<testsuite name="qemu_m68k/qemu_virt_m68k_m68010" timestamp="2026-08-16T13:59:46.666645" time="840.6200000000001" tests="76" failures="61" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="Unknown" />
+		</properties>
+		<testcase classname="kernel.fifo.timeout" name="kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_fail_on_fifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x98aa
+E: vector: 46  pc: 0x00003066  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x9a14 (test_timeout_non_empty_fifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.timeout" name="kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_on_dual_fifos" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x98aa
+E: vector: 46  pc: 0x00003066  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x9a14 (test_timeout_non_empty_fifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.timeout" name="kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_on_fifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x98aa
+E: vector: 46  pc: 0x00003066  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x9a14 (test_timeout_non_empty_fifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.timeout" name="kernel.fifo.timeout.fifo_timeout_1cpu.timeout_fifo_thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x98aa
+E: vector: 46  pc: 0x00003066  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x9a14 (test_timeout_non_empty_fifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.timeout" name="kernel.fifo.timeout.fifo_timeout.timeout_non_empty_fifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x98aa
+E: vector: 46  pc: 0x00003066  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x9a14 (test_timeout_non_empty_fifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.timeout" name="kernel.fifo.timeout.fifo_timeout_1cpu.timeout_empty_fifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x98aa
+E: vector: 46  pc: 0x00003066  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x9a14 (test_timeout_non_empty_fifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api_1cpu.fifo_cancel_wait" time="0.11" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_alloc_put" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_peek" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_is_empty_isr" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_is_empty_thread" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_isr2thread" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_thread2isr" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_put_slist_order" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_put_list_order" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_define" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api_1cpu.fifo_thread2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_api
+===================================================================
+START - test_fifo_alloc_put
+ PASS - test_fifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_fifo_define
+ PASS - test_fifo_define in 0.001 seconds
+===================================================================
+START - test_fifo_get_fail
+ PASS - test_fifo_get_fail in 0.108 seconds
+===================================================================
+START - test_fifo_is_empty_isr
+ PASS - test_fifo_is_empty_isr in 0.001 seconds
+===================================================================
+START - test_fifo_is_empty_thread
+ PASS - test_fifo_is_empty_thread in 0.001 seconds
+===================================================================
+START - test_fifo_isr2thread
+ PASS - test_fifo_isr2thread in 0.001 seconds
+===================================================================
+START - test_fifo_peek
+ PASS - test_fifo_peek in 0.001 seconds
+===================================================================
+START - test_fifo_put_list_order
+ PASS - test_fifo_put_list_order in 0.001 seconds
+===================================================================
+START - test_fifo_put_slist_order
+ PASS - test_fifo_put_slist_order in 0.001 seconds
+===================================================================
+START - test_fifo_thread2isr
+ PASS - test_fifo_thread2isr in 0.001 seconds
+===================================================================
+TESTSUITE fifo_api succeeded
+Running TESTSUITE fifo_api_1cpu
+===================================================================
+START - test_fifo_cancel_wait
+ PASS - test_fifo_cancel_wait in 0.112 seconds
+===================================================================
+START - test_fifo_loop
+* Pass data by fifo in loop 0
+main fifo put ---&gt; isr fifo get
+E: heap corruption (double free?) at 0xcf22
+E: vector: 46  pc: 0x00003556  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xd00c (test_fifo_loop)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_get_fail" time="0.11" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api_1cpu.fifo_loop" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_api
+===================================================================
+START - test_fifo_alloc_put
+ PASS - test_fifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_fifo_define
+ PASS - test_fifo_define in 0.001 seconds
+===================================================================
+START - test_fifo_get_fail
+ PASS - test_fifo_get_fail in 0.108 seconds
+===================================================================
+START - test_fifo_is_empty_isr
+ PASS - test_fifo_is_empty_isr in 0.001 seconds
+===================================================================
+START - test_fifo_is_empty_thread
+ PASS - test_fifo_is_empty_thread in 0.001 seconds
+===================================================================
+START - test_fifo_isr2thread
+ PASS - test_fifo_isr2thread in 0.001 seconds
+===================================================================
+START - test_fifo_peek
+ PASS - test_fifo_peek in 0.001 seconds
+===================================================================
+START - test_fifo_put_list_order
+ PASS - test_fifo_put_list_order in 0.001 seconds
+===================================================================
+START - test_fifo_put_slist_order
+ PASS - test_fifo_put_slist_order in 0.001 seconds
+===================================================================
+START - test_fifo_thread2isr
+ PASS - test_fifo_thread2isr in 0.001 seconds
+===================================================================
+TESTSUITE fifo_api succeeded
+Running TESTSUITE fifo_api_1cpu
+===================================================================
+START - test_fifo_cancel_wait
+ PASS - test_fifo_cancel_wait in 0.112 seconds
+===================================================================
+START - test_fifo_loop
+* Pass data by fifo in loop 0
+main fifo put ---&gt; isr fifo get
+E: heap corruption (double free?) at 0xcf22
+E: vector: 46  pc: 0x00003556  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xd00c (test_fifo_loop)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.usage" name="kernel.fifo.usage.fifo_usage.isr_fifo_play" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_usage
+===================================================================
+START - test_dual_fifo_play
+ PASS - test_dual_fifo_play in 0.001 seconds
+===================================================================
+START - test_isr_fifo_play
+E: heap corruption (double free?) at 0xaf5e
+E: vector: 46  pc: 0x00002952  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xaef8 (unknown)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.usage" name="kernel.fifo.usage.fifo_usage.dual_fifo_play" time="0.00" />
+		<testcase classname="kernel.fifo.usage" name="kernel.fifo.usage.fifo_usage.single_fifo_play" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_usage
+===================================================================
+START - test_dual_fifo_play
+ PASS - test_dual_fifo_play in 0.001 seconds
+===================================================================
+START - test_isr_fifo_play
+E: heap corruption (double free?) at 0xaf5e
+E: vector: 46  pc: 0x00002952  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xaef8 (unknown)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo.usage" name="kernel.lifo.usage.lifo_usage_1cpu.timeout_threads_pend_on_lifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x000034a6  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc12c (test_timeout_non_empty_lifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo.usage" name="kernel.lifo.usage.lifo_usage_1cpu.timeout_lifo_thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x000034a6  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc12c (test_timeout_non_empty_lifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo.usage" name="kernel.lifo.usage.lifo_usage.timeout_non_empty_lifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x000034a6  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc12c (test_timeout_non_empty_lifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo.usage" name="kernel.lifo.usage.lifo_usage_1cpu.timeout_empty_lifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x000034a6  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc12c (test_timeout_non_empty_lifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo.usage" name="kernel.lifo.usage.lifo_usage_1cpu.lifo_wait" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x000034a6  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc12c (test_timeout_non_empty_lifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo.usage" name="kernel.lifo.usage.lifo_usage_1cpu.lifo_nowait" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x000034a6  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc12c (test_timeout_non_empty_lifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo" name="kernel.lifo.lifo_contexts.lifo_alloc_put" time="0.00" />
+		<testcase classname="kernel.lifo" name="kernel.lifo.lifo_contexts.lifo_isr2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_contexts
+===================================================================
+START - test_lifo_alloc_put
+ PASS - test_lifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_lifo_isr2thread
+ASSERTION FAIL [z_waitq_head(&amp;heap-&gt;wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+	unexpected heap waiters
+E: vector: 46  pc: 0x000030b0  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xb65e (test_lifo_isr2thread)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo" name="kernel.lifo.lifo_contexts.lifo_thread2isr" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_contexts
+===================================================================
+START - test_lifo_alloc_put
+ PASS - test_lifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_lifo_isr2thread
+ASSERTION FAIL [z_waitq_head(&amp;heap-&gt;wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+	unexpected heap waiters
+E: vector: 46  pc: 0x000030b0  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xb65e (test_lifo_isr2thread)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo" name="kernel.lifo.lifo_contexts_1cpu.lifo_thread2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_contexts
+===================================================================
+START - test_lifo_alloc_put
+ PASS - test_lifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_lifo_isr2thread
+ASSERTION FAIL [z_waitq_head(&amp;heap-&gt;wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+	unexpected heap waiters
+E: vector: 46  pc: 0x000030b0  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xb65e (test_lifo_isr2thread)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo" name="kernel.lifo.lifo_fail.lifo_get_fail" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_contexts
+===================================================================
+START - test_lifo_alloc_put
+ PASS - test_lifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_lifo_isr2thread
+ASSERTION FAIL [z_waitq_head(&amp;heap-&gt;wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+	unexpected heap waiters
+E: vector: 46  pc: 0x000030b0  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xb65e (test_lifo_isr2thread)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo" name="kernel.lifo.lifo_loop.lifo_loop" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_contexts
+===================================================================
+START - test_lifo_alloc_put
+ PASS - test_lifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_lifo_isr2thread
+ASSERTION FAIL [z_waitq_head(&amp;heap-&gt;wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+	unexpected heap waiters
+E: vector: 46  pc: 0x000030b0  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xb65e (test_lifo_isr2thread)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_unique_append" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_multithread_competition" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.access_kernel_obj_with_priv_data" time="0.00" />
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.multiple_queues" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_poll_race" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_alloc" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_get_2threads" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_isr2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_thread2isr" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_merge_slist_wake" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_merge_slist_order" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_append_list_order" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_insert_after" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_prepend_order" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_init" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_define" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_thread2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_merge_list_error" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_append_list_error" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_get_fail" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_loop" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x00004786  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf07c (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_unique_append" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_multithread_competition" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.access_kernel_obj_with_priv_data" time="0.00" />
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.multiple_queues" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_poll_race" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_alloc" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_get_2threads" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_isr2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_thread2isr" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_merge_slist_wake" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_merge_slist_order" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_append_list_order" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_insert_after" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_prepend_order" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_init" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_define" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_thread2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_merge_list_error" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_append_list_error" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_get_fail" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_loop" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054fe  sr: 0x2700
+E: format/vector: 0x0000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf5bc (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+	</testsuite>
+	<testsuite name="qemu_m68k/qemu_virt_m68k_m68000" timestamp="2026-08-16T13:59:46.666645" time="840.7" tests="76" failures="61" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="Unknown" />
+		</properties>
+		<testcase classname="kernel.fifo.timeout" name="kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_fail_on_fifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x987a
+E: vector: 46  pc: 0x0000304c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x99e4 (test_timeout_non_empty_fifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.timeout" name="kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_on_dual_fifos" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x987a
+E: vector: 46  pc: 0x0000304c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x99e4 (test_timeout_non_empty_fifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.timeout" name="kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_on_fifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x987a
+E: vector: 46  pc: 0x0000304c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x99e4 (test_timeout_non_empty_fifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.timeout" name="kernel.fifo.timeout.fifo_timeout_1cpu.timeout_fifo_thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x987a
+E: vector: 46  pc: 0x0000304c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x99e4 (test_timeout_non_empty_fifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.timeout" name="kernel.fifo.timeout.fifo_timeout.timeout_non_empty_fifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x987a
+E: vector: 46  pc: 0x0000304c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x99e4 (test_timeout_non_empty_fifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.timeout" name="kernel.fifo.timeout.fifo_timeout_1cpu.timeout_empty_fifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x987a
+E: vector: 46  pc: 0x0000304c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x99e4 (test_timeout_non_empty_fifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api_1cpu.fifo_cancel_wait" time="0.11" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_alloc_put" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_peek" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_is_empty_isr" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_is_empty_thread" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_isr2thread" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_thread2isr" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_put_slist_order" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_put_list_order" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_define" time="0.00" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api_1cpu.fifo_thread2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_api
+===================================================================
+START - test_fifo_alloc_put
+ PASS - test_fifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_fifo_define
+ PASS - test_fifo_define in 0.001 seconds
+===================================================================
+START - test_fifo_get_fail
+ PASS - test_fifo_get_fail in 0.108 seconds
+===================================================================
+START - test_fifo_is_empty_isr
+ PASS - test_fifo_is_empty_isr in 0.001 seconds
+===================================================================
+START - test_fifo_is_empty_thread
+ PASS - test_fifo_is_empty_thread in 0.001 seconds
+===================================================================
+START - test_fifo_isr2thread
+ PASS - test_fifo_isr2thread in 0.001 seconds
+===================================================================
+START - test_fifo_peek
+ PASS - test_fifo_peek in 0.001 seconds
+===================================================================
+START - test_fifo_put_list_order
+ PASS - test_fifo_put_list_order in 0.001 seconds
+===================================================================
+START - test_fifo_put_slist_order
+ PASS - test_fifo_put_slist_order in 0.001 seconds
+===================================================================
+START - test_fifo_thread2isr
+ PASS - test_fifo_thread2isr in 0.001 seconds
+===================================================================
+TESTSUITE fifo_api succeeded
+Running TESTSUITE fifo_api_1cpu
+===================================================================
+START - test_fifo_cancel_wait
+ PASS - test_fifo_cancel_wait in 0.112 seconds
+===================================================================
+START - test_fifo_loop
+* Pass data by fifo in loop 0
+main fifo put ---&gt; isr fifo get
+E: heap corruption (double free?) at 0xceea
+E: vector: 46  pc: 0x0000353c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xcfd4 (test_fifo_loop)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api.fifo_get_fail" time="0.11" />
+		<testcase classname="kernel.fifo" name="kernel.fifo.fifo_api_1cpu.fifo_loop" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_api
+===================================================================
+START - test_fifo_alloc_put
+ PASS - test_fifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_fifo_define
+ PASS - test_fifo_define in 0.001 seconds
+===================================================================
+START - test_fifo_get_fail
+ PASS - test_fifo_get_fail in 0.108 seconds
+===================================================================
+START - test_fifo_is_empty_isr
+ PASS - test_fifo_is_empty_isr in 0.001 seconds
+===================================================================
+START - test_fifo_is_empty_thread
+ PASS - test_fifo_is_empty_thread in 0.001 seconds
+===================================================================
+START - test_fifo_isr2thread
+ PASS - test_fifo_isr2thread in 0.001 seconds
+===================================================================
+START - test_fifo_peek
+ PASS - test_fifo_peek in 0.001 seconds
+===================================================================
+START - test_fifo_put_list_order
+ PASS - test_fifo_put_list_order in 0.001 seconds
+===================================================================
+START - test_fifo_put_slist_order
+ PASS - test_fifo_put_slist_order in 0.001 seconds
+===================================================================
+START - test_fifo_thread2isr
+ PASS - test_fifo_thread2isr in 0.001 seconds
+===================================================================
+TESTSUITE fifo_api succeeded
+Running TESTSUITE fifo_api_1cpu
+===================================================================
+START - test_fifo_cancel_wait
+ PASS - test_fifo_cancel_wait in 0.112 seconds
+===================================================================
+START - test_fifo_loop
+* Pass data by fifo in loop 0
+main fifo put ---&gt; isr fifo get
+E: heap corruption (double free?) at 0xceea
+E: vector: 46  pc: 0x0000353c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xcfd4 (test_fifo_loop)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.usage" name="kernel.fifo.usage.fifo_usage.isr_fifo_play" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_usage
+===================================================================
+START - test_dual_fifo_play
+ PASS - test_dual_fifo_play in 0.001 seconds
+===================================================================
+START - test_isr_fifo_play
+E: heap corruption (double free?) at 0xaf2a
+E: vector: 46  pc: 0x00002938  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xaec4 (unknown)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.fifo.usage" name="kernel.fifo.usage.fifo_usage.dual_fifo_play" time="0.00" />
+		<testcase classname="kernel.fifo.usage" name="kernel.fifo.usage.fifo_usage.single_fifo_play" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_usage
+===================================================================
+START - test_dual_fifo_play
+ PASS - test_dual_fifo_play in 0.001 seconds
+===================================================================
+START - test_isr_fifo_play
+E: heap corruption (double free?) at 0xaf2a
+E: vector: 46  pc: 0x00002938  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xaec4 (unknown)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo.usage" name="kernel.lifo.usage.lifo_usage_1cpu.timeout_threads_pend_on_lifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x0000348c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc0f8 (test_timeout_non_empty_lifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo.usage" name="kernel.lifo.usage.lifo_usage_1cpu.timeout_lifo_thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x0000348c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc0f8 (test_timeout_non_empty_lifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo.usage" name="kernel.lifo.usage.lifo_usage.timeout_non_empty_lifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x0000348c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc0f8 (test_timeout_non_empty_lifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo.usage" name="kernel.lifo.usage.lifo_usage_1cpu.timeout_empty_lifo" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x0000348c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc0f8 (test_timeout_non_empty_lifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo.usage" name="kernel.lifo.usage.lifo_usage_1cpu.lifo_wait" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x0000348c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc0f8 (test_timeout_non_empty_lifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo.usage" name="kernel.lifo.usage.lifo_usage_1cpu.lifo_nowait" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x0000348c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc0f8 (test_timeout_non_empty_lifo)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo" name="kernel.lifo.lifo_contexts.lifo_alloc_put" time="0.00" />
+		<testcase classname="kernel.lifo" name="kernel.lifo.lifo_contexts.lifo_isr2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_contexts
+===================================================================
+START - test_lifo_alloc_put
+ PASS - test_lifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_lifo_isr2thread
+ASSERTION FAIL [z_waitq_head(&amp;heap-&gt;wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+	unexpected heap waiters
+E: vector: 46  pc: 0x00003096  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xb62a (test_lifo_isr2thread)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo" name="kernel.lifo.lifo_contexts.lifo_thread2isr" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_contexts
+===================================================================
+START - test_lifo_alloc_put
+ PASS - test_lifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_lifo_isr2thread
+ASSERTION FAIL [z_waitq_head(&amp;heap-&gt;wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+	unexpected heap waiters
+E: vector: 46  pc: 0x00003096  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xb62a (test_lifo_isr2thread)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo" name="kernel.lifo.lifo_contexts_1cpu.lifo_thread2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_contexts
+===================================================================
+START - test_lifo_alloc_put
+ PASS - test_lifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_lifo_isr2thread
+ASSERTION FAIL [z_waitq_head(&amp;heap-&gt;wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+	unexpected heap waiters
+E: vector: 46  pc: 0x00003096  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xb62a (test_lifo_isr2thread)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo" name="kernel.lifo.lifo_fail.lifo_get_fail" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_contexts
+===================================================================
+START - test_lifo_alloc_put
+ PASS - test_lifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_lifo_isr2thread
+ASSERTION FAIL [z_waitq_head(&amp;heap-&gt;wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+	unexpected heap waiters
+E: vector: 46  pc: 0x00003096  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xb62a (test_lifo_isr2thread)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.lifo" name="kernel.lifo.lifo_loop.lifo_loop" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_contexts
+===================================================================
+START - test_lifo_alloc_put
+ PASS - test_lifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_lifo_isr2thread
+ASSERTION FAIL [z_waitq_head(&amp;heap-&gt;wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+	unexpected heap waiters
+E: vector: 46  pc: 0x00003096  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xb62a (test_lifo_isr2thread)
+E: Halting system
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_unique_append" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_multithread_competition" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.access_kernel_obj_with_priv_data" time="0.00" />
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.multiple_queues" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_poll_race" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_alloc" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_get_2threads" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_isr2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_thread2isr" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_merge_slist_wake" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_merge_slist_order" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_append_list_order" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_insert_after" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_prepend_order" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_init" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_define" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_thread2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_merge_list_error" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api.queue_append_list_error" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_get_fail" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue" name="kernel.queue.queue_api_1cpu.queue_loop" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_unique_append" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_multithread_competition" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.access_kernel_obj_with_priv_data" time="0.00" />
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.multiple_queues" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_poll_race" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_alloc" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_get_2threads" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_isr2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_thread2isr" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_merge_slist_wake" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_merge_slist_order" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_append_list_order" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_insert_after" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_prepend_order" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_init" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_define" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_thread2thread" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_merge_list_error" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api.queue_append_list_error" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_get_fail" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+		<testcase classname="kernel.queue.minimallibc" name="kernel.queue.minimallibc.queue_api_1cpu.queue_loop" time="0.00">
+			<failure type="failure" message="Timeout">*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x000054e4  sr: 0x2700
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf590 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...
+</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

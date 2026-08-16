@@ -1,0 +1,13 @@
+*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_usage
+===================================================================
+START - test_dual_fifo_play
+ PASS - test_dual_fifo_play in 0.001 seconds
+===================================================================
+START - test_isr_fifo_play
+E: heap corruption (double free?) at 0xaf5e
+E: vector: 46  pc: 0x00002952  sr: 0x2700
+E: format/vector: 0x0000
+E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xaef8 (unknown)
+E: Halting system

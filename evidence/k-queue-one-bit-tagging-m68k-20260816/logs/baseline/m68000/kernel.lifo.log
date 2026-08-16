@@ -1,0 +1,13 @@
+*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_contexts
+===================================================================
+START - test_lifo_alloc_put
+ PASS - test_lifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_lifo_isr2thread
+ASSERTION FAIL [z_waitq_head(&heap->wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+	unexpected heap waiters
+E: vector: 46  pc: 0x00003096  sr: 0x2700
+E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xb62a (test_lifo_isr2thread)
+E: Halting system

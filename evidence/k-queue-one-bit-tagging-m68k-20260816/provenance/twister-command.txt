@@ -1,0 +1,18 @@
+TWISTER_USE_THREADS=1 \
+python scripts/twister \
+  -T tests/kernel/fifo \
+  -T tests/kernel/lifo \
+  -T tests/kernel/queue \
+  -p qemu_m68k/qemu_virt_m68k_m68000 \
+  -p qemu_m68k/qemu_virt_m68k_m68010 \
+  --filter runnable \
+  -S \
+  --timeout-multiplier 2 \
+  --jobs 4 \
+  --platform-reports \
+  --report-all-options \
+  --log-file <output>/twister.log \
+  -O <output>
+
+The baseline and patched invocations differed only in <output> and the
+k_queue source blobs listed in source-blobs.txt.

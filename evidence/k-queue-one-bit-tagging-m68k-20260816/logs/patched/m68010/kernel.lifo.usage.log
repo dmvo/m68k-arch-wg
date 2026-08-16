@@ -1,0 +1,48 @@
+*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ PASS - test_timeout_non_empty_lifo in 0.001 seconds
+===================================================================
+TESTSUITE lifo_usage succeeded
+Running TESTSUITE lifo_usage_1cpu
+===================================================================
+START - test_lifo_nowait
+ PASS - test_lifo_nowait in 0.001 seconds
+===================================================================
+START - test_lifo_wait
+ PASS - test_lifo_wait in 0.001 seconds
+===================================================================
+START - test_timeout_empty_lifo
+ PASS - test_timeout_empty_lifo in 0.106 seconds
+===================================================================
+START - test_timeout_lifo_thread
+ PASS - test_timeout_lifo_thread in 0.020 seconds
+===================================================================
+START - test_timeout_threads_pend_on_lifo
+ thread (q order: 2, t/o: 0, lifo 0xbefa)
+ thread (q order: 3, t/o: 100, lifo 0xbefa)
+ thread (q order: 0, t/o: 200, lifo 0xbefa)
+ thread (q order: 4, t/o: 300, lifo 0xbefa)
+ thread (q order: 1, t/o: 400, lifo 0xbefa)
+ PASS - test_timeout_threads_pend_on_lifo in 0.410 seconds
+===================================================================
+TESTSUITE lifo_usage_1cpu succeeded
+
+------ TESTSUITE SUMMARY START ------
+
+SUITE PASS - 100.00% [lifo_usage]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.001 seconds
+ - PASS - [lifo_usage.test_timeout_non_empty_lifo] duration = 0.001 seconds
+
+SUITE PASS - 100.00% [lifo_usage_1cpu]: pass = 5, fail = 0, skip = 0, total = 5 duration = 0.538 seconds
+ - PASS - [lifo_usage_1cpu.test_lifo_nowait] duration = 0.001 seconds
+ - PASS - [lifo_usage_1cpu.test_lifo_wait] duration = 0.001 seconds
+ - PASS - [lifo_usage_1cpu.test_timeout_empty_lifo] duration = 0.106 seconds
+ - PASS - [lifo_usage_1cpu.test_timeout_lifo_thread] duration = 0.020 seconds
+ - PASS - [lifo_usage_1cpu.test_timeout_threads_pend_on_lifo] duration = 0.410 seconds
+
+------ TESTSUITE SUMMARY END ------
+
+===================================================================
+RunID: 9d73de2c032169e46c8af52982438c2e
+PROJECT EXECUTION SUCCESSFUL

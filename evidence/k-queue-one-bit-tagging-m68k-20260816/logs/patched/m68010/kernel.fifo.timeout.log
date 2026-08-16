@@ -1,0 +1,43 @@
+*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+ PASS - test_timeout_non_empty_fifo in 0.001 seconds
+===================================================================
+TESTSUITE fifo_timeout succeeded
+Running TESTSUITE fifo_timeout_1cpu
+===================================================================
+START - test_timeout_empty_fifo
+ PASS - test_timeout_empty_fifo in 0.038 seconds
+===================================================================
+START - test_timeout_fifo_thread
+ PASS - test_timeout_fifo_thread in 0.040 seconds
+===================================================================
+START - test_timeout_threads_pend_fail_on_fifo
+ PASS - test_timeout_threads_pend_fail_on_fifo in 0.059 seconds
+===================================================================
+START - test_timeout_threads_pend_on_dual_fifos
+ PASS - test_timeout_threads_pend_on_dual_fifos in 0.110 seconds
+===================================================================
+START - test_timeout_threads_pend_on_fifo
+ PASS - test_timeout_threads_pend_on_fifo in 0.070 seconds
+===================================================================
+TESTSUITE fifo_timeout_1cpu succeeded
+
+------ TESTSUITE SUMMARY START ------
+
+SUITE PASS - 100.00% [fifo_timeout]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.001 seconds
+ - PASS - [fifo_timeout.test_timeout_non_empty_fifo] duration = 0.001 seconds
+
+SUITE PASS - 100.00% [fifo_timeout_1cpu]: pass = 5, fail = 0, skip = 0, total = 5 duration = 0.317 seconds
+ - PASS - [fifo_timeout_1cpu.test_timeout_empty_fifo] duration = 0.038 seconds
+ - PASS - [fifo_timeout_1cpu.test_timeout_fifo_thread] duration = 0.040 seconds
+ - PASS - [fifo_timeout_1cpu.test_timeout_threads_pend_fail_on_fifo] duration = 0.059 seconds
+ - PASS - [fifo_timeout_1cpu.test_timeout_threads_pend_on_dual_fifos] duration = 0.110 seconds
+ - PASS - [fifo_timeout_1cpu.test_timeout_threads_pend_on_fifo] duration = 0.070 seconds
+
+------ TESTSUITE SUMMARY END ------
+
+===================================================================
+RunID: 8218f6f5cf31872122178bf96675d170
+PROJECT EXECUTION SUCCESSFUL

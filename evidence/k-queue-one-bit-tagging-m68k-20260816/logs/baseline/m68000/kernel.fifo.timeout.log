@@ -1,0 +1,9 @@
+*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_timeout
+===================================================================
+START - test_timeout_non_empty_fifo
+E: heap corruption (double free?) at 0x987a
+E: vector: 46  pc: 0x0000304c  sr: 0x2700
+E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x99e4 (test_timeout_non_empty_fifo)
+E: Halting system

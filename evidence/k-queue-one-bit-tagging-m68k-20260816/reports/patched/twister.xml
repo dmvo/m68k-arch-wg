@@ -1,0 +1,26 @@
+<testsuites>
+	<testsuite name="qemu_m68k/qemu_virt_m68k_m68010" timestamp="2026-08-16T14:14:01.958227" time="9.9" tests="7" failures="0" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="Unknown" />
+		</properties>
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68010:kernel.fifo.timeout" name="kernel.fifo.timeout" time="1.46" />
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68010:kernel.fifo" name="kernel.fifo" time="1.43" />
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68010:kernel.fifo.usage" name="kernel.fifo.usage" time="1.32" />
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68010:kernel.lifo.usage" name="kernel.lifo.usage" time="1.36" />
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68010:kernel.lifo" name="kernel.lifo" time="1.54" />
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68010:kernel.queue" name="kernel.queue" time="1.37" />
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68010:kernel.queue.minimallibc" name="kernel.queue.minimallibc" time="1.42" />
+	</testsuite>
+	<testsuite name="qemu_m68k/qemu_virt_m68k_m68000" timestamp="2026-08-16T14:14:01.958227" time="9.780000000000001" tests="7" failures="0" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="Unknown" />
+		</properties>
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68000:kernel.fifo.timeout" name="kernel.fifo.timeout" time="1.24" />
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68000:kernel.fifo" name="kernel.fifo" time="1.34" />
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68000:kernel.fifo.usage" name="kernel.fifo.usage" time="1.36" />
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68000:kernel.lifo.usage" name="kernel.lifo.usage" time="1.28" />
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68000:kernel.lifo" name="kernel.lifo" time="1.56" />
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68000:kernel.queue" name="kernel.queue" time="1.44" />
+		<testcase classname="qemu_m68k/qemu_virt_m68k_m68000:kernel.queue.minimallibc" name="kernel.queue.minimallibc" time="1.56" />
+	</testsuite>
+</testsuites>

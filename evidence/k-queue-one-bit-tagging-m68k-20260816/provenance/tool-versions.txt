@@ -1,0 +1,7 @@
+Linux 6.18.35 x86_64 GNU/Linux
+Python 3.12.13
+m68k-zephyr-elf-gcc (Zephyr SDK 1.0.1-9-g2410e6c) 14.3.0
+QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.18)
+cmake version 4.4.2
+1.13.0.git.kitware.jobserver-pipe-1
+ccache version 4.13.6

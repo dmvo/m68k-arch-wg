@@ -1,0 +1,26 @@
+*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_usage
+===================================================================
+START - test_dual_fifo_play
+ PASS - test_dual_fifo_play in 0.001 seconds
+===================================================================
+START - test_isr_fifo_play
+ PASS - test_isr_fifo_play in 0.001 seconds
+===================================================================
+START - test_single_fifo_play
+ PASS - test_single_fifo_play in 0.001 seconds
+===================================================================
+TESTSUITE fifo_usage succeeded
+
+------ TESTSUITE SUMMARY START ------
+
+SUITE PASS - 100.00% [fifo_usage]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.003 seconds
+ - PASS - [fifo_usage.test_dual_fifo_play] duration = 0.001 seconds
+ - PASS - [fifo_usage.test_isr_fifo_play] duration = 0.001 seconds
+ - PASS - [fifo_usage.test_single_fifo_play] duration = 0.001 seconds
+
+------ TESTSUITE SUMMARY END ------
+
+===================================================================
+RunID: f8d6a51676fcb3cd7ad40ef6fd2f9f68
+PROJECT EXECUTION SUCCESSFUL

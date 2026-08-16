@@ -1,0 +1,10 @@
+*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_usage
+===================================================================
+START - test_timeout_non_empty_lifo
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x26
+E: vector: 46  pc: 0x0000348c  sr: 0x2700
+E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xc0f8 (test_timeout_non_empty_lifo)
+E: Halting system

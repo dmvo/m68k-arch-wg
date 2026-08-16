@@ -1,0 +1,213 @@
+*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE lifo_contexts
+===================================================================
+START - test_lifo_alloc_put
+ PASS - test_lifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_lifo_isr2thread
+ PASS - test_lifo_isr2thread in 0.001 seconds
+===================================================================
+START - test_lifo_thread2isr
+ PASS - test_lifo_thread2isr in 0.001 seconds
+===================================================================
+TESTSUITE lifo_contexts succeeded
+Running TESTSUITE lifo_contexts_1cpu
+===================================================================
+START - test_lifo_thread2thread
+ PASS - test_lifo_thread2thread in 0.001 seconds
+===================================================================
+TESTSUITE lifo_contexts_1cpu succeeded
+Running TESTSUITE lifo_fail
+===================================================================
+START - test_lifo_get_fail
+ PASS - test_lifo_get_fail in 0.104 seconds
+===================================================================
+TESTSUITE lifo_fail succeeded
+Running TESTSUITE lifo_loop
+===================================================================
+START - test_lifo_loop
+* Pass data by lifo in loop 0
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 1
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 2
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 3
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 4
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 5
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 6
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 7
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 8
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 9
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 10
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 11
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 12
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 13
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 14
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 15
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 16
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 17
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 18
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 19
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 20
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 21
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 22
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 23
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 24
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 25
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 26
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 27
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 28
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 29
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 30
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+* Pass data by lifo in loop 31
+main lifo put ---> isr lifo get
+isr lifo put ---> thread lifo get
+thread lifo put ---> main lifo get
+
+ PASS - test_lifo_loop in 0.037 seconds
+===================================================================
+TESTSUITE lifo_loop succeeded
+
+------ TESTSUITE SUMMARY START ------
+
+SUITE PASS - 100.00% [lifo_contexts]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.003 seconds
+ - PASS - [lifo_contexts.test_lifo_alloc_put] duration = 0.001 seconds
+ - PASS - [lifo_contexts.test_lifo_isr2thread] duration = 0.001 seconds
+ - PASS - [lifo_contexts.test_lifo_thread2isr] duration = 0.001 seconds
+
+SUITE PASS - 100.00% [lifo_contexts_1cpu]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.001 seconds
+ - PASS - [lifo_contexts_1cpu.test_lifo_thread2thread] duration = 0.001 seconds
+
+SUITE PASS - 100.00% [lifo_fail]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.104 seconds
+ - PASS - [lifo_fail.test_lifo_get_fail] duration = 0.104 seconds
+
+SUITE PASS - 100.00% [lifo_loop]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.037 seconds
+ - PASS - [lifo_loop.test_lifo_loop] duration = 0.037 seconds
+
+------ TESTSUITE SUMMARY END ------
+
+===================================================================
+RunID: cc7ac0148132bef1de20a97d1e059858
+PROJECT EXECUTION SUCCESSFUL

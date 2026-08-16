@@ -1,0 +1,135 @@
+*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ PASS - test_multiple_queues in 0.002 seconds
+===================================================================
+START - test_queue_alloc
+ PASS - test_queue_alloc in 0.001 seconds
+===================================================================
+START - test_queue_append_list_error
+ PASS - test_queue_append_list_error in 0.001 seconds
+===================================================================
+START - test_queue_append_list_order
+ PASS - test_queue_append_list_order in 0.001 seconds
+===================================================================
+START - test_queue_define
+ PASS - test_queue_define in 0.001 seconds
+===================================================================
+START - test_queue_init
+ PASS - test_queue_init in 0.001 seconds
+===================================================================
+START - test_queue_insert_after
+ PASS - test_queue_insert_after in 0.001 seconds
+===================================================================
+START - test_queue_isr2thread
+ PASS - test_queue_isr2thread in 0.001 seconds
+===================================================================
+START - test_queue_merge_list_error
+ PASS - test_queue_merge_list_error in 0.001 seconds
+===================================================================
+START - test_queue_merge_slist_order
+ PASS - test_queue_merge_slist_order in 0.001 seconds
+===================================================================
+START - test_queue_prepend_order
+ PASS - test_queue_prepend_order in 0.001 seconds
+===================================================================
+START - test_queue_thread2isr
+ PASS - test_queue_thread2isr in 0.001 seconds
+===================================================================
+START - test_queue_unique_append
+ PASS - test_queue_unique_append in 0.001 seconds
+===================================================================
+TESTSUITE queue_api succeeded
+Running TESTSUITE queue_api_1cpu
+===================================================================
+START - test_queue_get_2threads
+ PASS - test_queue_get_2threads in 0.012 seconds
+===================================================================
+START - test_queue_get_fail
+ PASS - test_queue_get_fail in 0.109 seconds
+===================================================================
+START - test_queue_loop
+* Pass data by queue in loop 0
+* Pass data by queue in loop 1
+* Pass data by queue in loop 2
+* Pass data by queue in loop 3
+* Pass data by queue in loop 4
+* Pass data by queue in loop 5
+* Pass data by queue in loop 6
+* Pass data by queue in loop 7
+* Pass data by queue in loop 8
+* Pass data by queue in loop 9
+* Pass data by queue in loop 10
+* Pass data by queue in loop 11
+* Pass data by queue in loop 12
+* Pass data by queue in loop 13
+* Pass data by queue in loop 14
+* Pass data by queue in loop 15
+* Pass data by queue in loop 16
+* Pass data by queue in loop 17
+* Pass data by queue in loop 18
+* Pass data by queue in loop 19
+* Pass data by queue in loop 20
+* Pass data by queue in loop 21
+* Pass data by queue in loop 22
+* Pass data by queue in loop 23
+* Pass data by queue in loop 24
+* Pass data by queue in loop 25
+* Pass data by queue in loop 26
+* Pass data by queue in loop 27
+* Pass data by queue in loop 28
+* Pass data by queue in loop 29
+* Pass data by queue in loop 30
+* Pass data by queue in loop 31
+ PASS - test_queue_loop in 0.037 seconds
+===================================================================
+START - test_queue_merge_slist_wake
+ PASS - test_queue_merge_slist_wake in 0.013 seconds
+===================================================================
+START - test_queue_multithread_competition
+ PASS - test_queue_multithread_competition in 0.080 seconds
+===================================================================
+START - test_queue_poll_race
+ PASS - test_queue_poll_race in 0.039 seconds
+===================================================================
+START - test_queue_thread2thread
+ PASS - test_queue_thread2thread in 0.001 seconds
+===================================================================
+TESTSUITE queue_api_1cpu succeeded
+
+------ TESTSUITE SUMMARY START ------
+
+SUITE PASS - 100.00% [queue_api]: pass = 14, fail = 0, skip = 0, total = 14 duration = 0.015 seconds
+ - PASS - [queue_api.test_access_kernel_obj_with_priv_data] duration = 0.001 seconds
+ - PASS - [queue_api.test_multiple_queues] duration = 0.002 seconds
+ - PASS - [queue_api.test_queue_alloc] duration = 0.001 seconds
+ - PASS - [queue_api.test_queue_append_list_error] duration = 0.001 seconds
+ - PASS - [queue_api.test_queue_append_list_order] duration = 0.001 seconds
+ - PASS - [queue_api.test_queue_define] duration = 0.001 seconds
+ - PASS - [queue_api.test_queue_init] duration = 0.001 seconds
+ - PASS - [queue_api.test_queue_insert_after] duration = 0.001 seconds
+ - PASS - [queue_api.test_queue_isr2thread] duration = 0.001 seconds
+ - PASS - [queue_api.test_queue_merge_list_error] duration = 0.001 seconds
+ - PASS - [queue_api.test_queue_merge_slist_order] duration = 0.001 seconds
+ - PASS - [queue_api.test_queue_prepend_order] duration = 0.001 seconds
+ - PASS - [queue_api.test_queue_thread2isr] duration = 0.001 seconds
+ - PASS - [queue_api.test_queue_unique_append] duration = 0.001 seconds
+
+SUITE PASS - 100.00% [queue_api_1cpu]: pass = 7, fail = 0, skip = 0, total = 7 duration = 0.291 seconds
+ - PASS - [queue_api_1cpu.test_queue_get_2threads] duration = 0.012 seconds
+ - PASS - [queue_api_1cpu.test_queue_get_fail] duration = 0.109 seconds
+ - PASS - [queue_api_1cpu.test_queue_loop] duration = 0.037 seconds
+ - PASS - [queue_api_1cpu.test_queue_merge_slist_wake] duration = 0.013 seconds
+ - PASS - [queue_api_1cpu.test_queue_multithread_competition] duration = 0.080 seconds
+ - PASS - [queue_api_1cpu.test_queue_poll_race] duration = 0.039 seconds
+ - PASS - [queue_api_1cpu.test_queue_thread2thread] duration = 0.001 seconds
+
+------ TESTSUITE SUMMARY END ------
+
+===================================================================
+RunID: abed5184c9fbe653c3f22e0e17af8c26
+PROJECT EXECUTION SUCCESSFUL

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-08-16T12:20:00Z",
+  "purpose": "Focused m68k A/B validation for k_queue one-bit tagging",
+  "source": {
+    "upstream_base_commit": "c5dffcb7c9da611b40a828f79fc6a8405416c1ed",
+    "m68k_preview_reference": "bc2212da3aa1904736f2b10c253d323cb1bca294",
+    "staging_commit": "59e3bdcc64c0b3e08b55d2e86c2480a7ecb5a4b4",
+    "staging_tree": "84bfba9840e10c3b180985da3c02d8e98f1b68cc",
+    "stable_patch_id": "34ff1af01978178a172bc86c1b321d2b0cac7a90"
+  },
+  "platforms": [
+    "qemu_m68k/qemu_virt_m68k_m68000",
+    "qemu_m68k/qemu_virt_m68k_m68010"
+  ],
+  "scenarios": [
+    "kernel.fifo",
+    "kernel.fifo.timeout",
+    "kernel.fifo.usage",
+    "kernel.lifo",
+    "kernel.lifo.usage",
+    "kernel.queue",
+    "kernel.queue.minimallibc"
+  ],
+  "runs": {
+    "baseline": {
+      "started_at_utc": "2026-08-16T11:59:43Z",
+      "ended_at_utc": "2026-08-16T12:13:22Z",
+      "twister_duration_seconds": 817.64,
+      "configurations": {"passed": 0, "failed": 14, "errored": 0},
+      "testcases": {"passed": 30, "failed": 14, "blocked": 108},
+      "retries": 0
+    },
+    "patched": {
+      "started_at_utc": "2026-08-16T12:13:59Z",
+      "ended_at_utc": "2026-08-16T12:19:48Z",
+      "twister_duration_seconds": 348.64,
+      "configurations": {"passed": 14, "failed": 0, "errored": 0},
+      "testcases": {"passed": 152, "failed": 0, "blocked": 0},
+      "retries": 0
+    }
+  },
+  "notes": [
+    "No tests were modified and no synthetic addresses were used.",
+    "The same fresh ccache directory was used for both runs; it was empty before baseline.",
+    "TWISTER_USE_THREADS=1 changes only Twister worker transport and was required because the execution sandbox blocks local multiprocessing sockets.",
+    "The missing source Git metadata warning in twister.log is caused by workspace cleanup; exact source identity is recorded with verified Git blob IDs."
+  ]
+}

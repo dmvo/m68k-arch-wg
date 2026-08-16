@@ -1,0 +1,18 @@
+upstream_base_commit c5dffcb7c9da611b40a828f79fc6a8405416c1ed
+m68k_preview_reference bc2212da3aa1904736f2b10c253d323cb1bca294
+staging_commit 59e3bdcc64c0b3e08b55d2e86c2480a7ecb5a4b4
+staging_tree 84bfba9840e10c3b180985da3c02d8e98f1b68cc
+stable_patch_id 34ff1af01978178a172bc86c1b321d2b0cac7a90
+
+common:
+include/zephyr/sys/sflist.h c340a90f1fac620f9c966a9fc6d49c5f998d02a9
+
+baseline:
+include/zephyr/kernel.h 81fe7ca979d4024a32e0896bc729ff14188ed9cf
+kernel/queue.c 7ef935fd0042b336d35306f5a68829e0bb965f58
+
+patched:
+doc/kernel/services/data_passing/fifos.rst 3e5490423fe77c69575f2bb054f1b87b9fa68888
+doc/kernel/services/data_passing/lifos.rst b893a0e15c4aee9ec2e51de86f1b62531614cf30
+include/zephyr/kernel.h 4e269189b29a5f3835e0bf1bb4991acdf052ab72
+kernel/queue.c 2c371c2c19a59e4b678db69b6821b32f5e84244f

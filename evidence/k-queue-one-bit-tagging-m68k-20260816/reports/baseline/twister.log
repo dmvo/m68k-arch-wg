@@ -1,0 +1,650 @@
+2026-08-16 13:59:44,584 - twister - INFO - Using Ninja..
+2026-08-16 13:59:44,603 - twister - WARNING - Could not determine version
+2026-08-16 13:59:44,618 - twister - DEBUG - Running cmake script /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/cmake/verify-toolchain.cmake
+2026-08-16 13:59:44,618 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -DFORMAT=json -P /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/cmake/verify-toolchain.cmake
+2026-08-16 13:59:45,624 - twister - DEBUG - Finished running /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/cmake/verify-toolchain.cmake
+2026-08-16 13:59:45,624 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-08-16 13:59:46,650 - twister - DEBUG - Reading testsuite configuration files under /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo...
+2026-08-16 13:59:46,650 - twister - DEBUG - Found possible testsuite in /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_timeout
+2026-08-16 13:59:46,653 - twister - DEBUG - Found possible testsuite in /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_api
+2026-08-16 13:59:46,655 - twister - DEBUG - Found possible testsuite in /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_usage
+2026-08-16 13:59:46,656 - twister - DEBUG - Reading testsuite configuration files under /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo...
+2026-08-16 13:59:46,656 - twister - DEBUG - Found possible testsuite in /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_usage
+2026-08-16 13:59:46,658 - twister - DEBUG - Found possible testsuite in /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_api
+2026-08-16 13:59:46,659 - twister - DEBUG - Reading testsuite configuration files under /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue...
+2026-08-16 13:59:46,659 - twister - DEBUG - Found possible testsuite in /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue
+2026-08-16 13:59:46,663 - twister - DEBUG - No duplicates found.
+2026-08-16 13:59:46,663 - twister - DEBUG -  platform filter: ['qemu_m68k/qemu_virt_m68k_m68000', 'qemu_m68k/qemu_virt_m68k_m68010']
+2026-08-16 13:59:46,663 - twister - DEBUG - platform_pattern: []
+2026-08-16 13:59:46,663 - twister - DEBUG -    vendor filter: []
+2026-08-16 13:59:46,663 - twister - DEBUG -      arch_filter: None
+2026-08-16 13:59:46,663 - twister - DEBUG -       tag_filter: None
+2026-08-16 13:59:46,663 - twister - DEBUG -      exclude_tag: None
+2026-08-16 13:59:46,663 - twister - DEBUG - Checking platform filter: ['qemu_m68k/qemu_virt_m68k_m68000', 'qemu_m68k/qemu_virt_m68k_m68010']
+2026-08-16 13:59:46,664 - twister - INFO - Building initial testsuite list...
+2026-08-16 13:59:46,666 - twister - INFO - Built testsuite list in 0.00 seconds
+2026-08-16 13:59:46,666 - twister - INFO - Writing JSON report /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/testplan.json
+2026-08-16 13:59:46,679 - twister - INFO - JOBS: 4
+2026-08-16 13:59:46,680 - twister - INFO - Adding tasks to the queue...
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.timeout
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.timeout
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.usage
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.usage
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo.usage
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo.usage
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue.minimallibc
+2026-08-16 13:59:46,680 - twister - DEBUG - adding qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue.minimallibc
+2026-08-16 13:59:46,680 - twister - INFO - Added initial list of jobs to queue
+2026-08-16 13:59:46,684 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 13:59:46,685 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 13:59:46,685 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc -DTC_RUNID=80d2c698522f64599a214721a28e31ba -DTC_NAME=kernel.queue.minimallibc -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc/qemu-fifo -DOVERLAY_CONFIG=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc/twister/testsuite_extra.conf -DBOARD=qemu_m68k/qemu_virt_m68k_m68010 -DMODULES=kconfig -P/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/cmake/package_helper.cmake
+2026-08-16 13:59:46,686 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc -DTC_RUNID=a943489ed7b704a955e949f9fd165089 -DTC_NAME=kernel.queue.minimallibc -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc/qemu-fifo -DOVERLAY_CONFIG=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc/twister/testsuite_extra.conf -DBOARD=qemu_m68k/qemu_virt_m68k_m68000 -DMODULES=kconfig -P/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/cmake/package_helper.cmake
+2026-08-16 13:59:46,690 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 13:59:46,691 - twister - DEBUG - Launched 4 jobs
+2026-08-16 13:59:46,691 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 13:59:46,692 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue -DTC_RUNID=9b12bb140384483248fc6c6eb50d5b77 -DTC_NAME=kernel.queue -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue/qemu-fifo -DBOARD=qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 13:59:46,692 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue -DTC_RUNID=c9a511b500ac7019474c4d8b444dcffe -DTC_NAME=kernel.queue -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue/qemu-fifo -DBOARD=qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 13:59:56,617 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68000 in 9.92 seconds
+2026-08-16 13:59:56,618 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 13:59:56,618 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc -DTC_RUNID=a943489ed7b704a955e949f9fd165089 -DTC_NAME=kernel.queue.minimallibc -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc/qemu-fifo -DOVERLAY_CONFIG=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc/twister/testsuite_extra.conf -DBOARD=qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 13:59:56,742 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68010 in 10.03 seconds
+2026-08-16 13:59:56,743 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 13:59:56,743 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc -DTC_RUNID=80d2c698522f64599a214721a28e31ba -DTC_NAME=kernel.queue.minimallibc -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc/qemu-fifo -DOVERLAY_CONFIG=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc/twister/testsuite_extra.conf -DBOARD=qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:00:00,010 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68010 in 13.31 seconds
+2026-08-16 14:00:00,010 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue
+2026-08-16 14:00:00,010 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:00:00,012 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue
+2026-08-16 14:00:00,071 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68000 in 13.38 seconds
+2026-08-16 14:00:00,071 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue
+2026-08-16 14:00:00,071 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:00:00,075 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue
+2026-08-16 14:00:11,819 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68000 in 15.18 seconds
+2026-08-16 14:00:11,819 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue.minimallibc
+2026-08-16 14:00:11,819 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:00:11,823 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc
+2026-08-16 14:00:12,404 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68010 in 15.64 seconds
+2026-08-16 14:00:12,404 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue.minimallibc
+2026-08-16 14:00:12,404 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:00:12,405 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc
+2026-08-16 14:01:19,101 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68010 in 79.09 seconds
+2026-08-16 14:01:19,102 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue
+2026-08-16 14:01:19,102 - twister - DEBUG - Determine test cases for test suite: kernel.queue
+2026-08-16 14:01:19,107 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68000 in 79.04 seconds
+2026-08-16 14:01:19,107 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue
+2026-08-16 14:01:19,108 - twister - DEBUG - Determine test cases for test suite: kernel.queue
+2026-08-16 14:01:19,189 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue already has 33 testcase(s) known: [<TestCase kernel.queue.queue_api.queue_append_list_order with None>, <TestCase kernel.queue.queue_api.access_kernel_obj_with_priv_data with None>, <TestCase kernel.queue.queue_api_1cpu.queue_supv_to_user with None>, <TestCase kernel.queue.queue_api_1cpu.queue_get_fail with None>, <TestCase kernel.queue.queue_api_1cpu.queue_thread2thread with None>, <TestCase kernel.queue.queue_api.queue_init with None>, <TestCase kernel.queue.queue_api.queue_isr2thread with None>, <TestCase kernel.queue.queue_api.queue_prepend_order with None>, <TestCase kernel.queue.queue_api.queue_insert_after with None>, <TestCase kernel.queue.queue_api.queue_get_null with None>, <TestCase kernel.queue.queue_api_1cpu.queue_poll_race with None>, <TestCase kernel.queue.queue_api.queue_append_list_error with None>, <TestCase kernel.queue.queue_api.queue_alloc with None>, <TestCase kernel.queue.queue_api.multiple_queues with None>, <TestCase kernel.queue.queue_api_1cpu.queue_merge_slist_wake with None>, <TestCase kernel.queue.queue_api.queue_alloc_append_null with None>, <TestCase kernel.queue.queue_api.queue_alloc_prepend_null with None>, <TestCase kernel.queue.queue_api.queue_peek_tail_null with None>, <TestCase kernel.queue.queue_api.queue_define with None>, <TestCase kernel.queue.queue_api_1cpu.queue_multithread_competition with None>, <TestCase kernel.queue.queue_api_1cpu.queue_get_2threads with None>, <TestCase kernel.queue.queue_api.queue_init_null with None>, <TestCase kernel.queue.queue_api.queue_alloc_append_user with None>, <TestCase kernel.queue.queue_api.queue_alloc_prepend_user with None>, <TestCase kernel.queue.queue_api.queue_is_empty_null with None>, <TestCase kernel.queue.queue_api.queue_thread2isr with None>, <TestCase kernel.queue.queue_api.queue_cancel_wait_error with None>, <TestCase kernel.queue.queue_api_1cpu.queue_loop with None>, <TestCase kernel.queue.queue_api.auto_free with None>, <TestCase kernel.queue.queue_api.queue_unique_append with None>, <TestCase kernel.queue.queue_api.queue_merge_list_error with None>, <TestCase kernel.queue.queue_api.queue_peek_head_null with None>, <TestCase kernel.queue.queue_api.queue_merge_slist_order with None>]
+2026-08-16 14:01:19,189 - twister - DEBUG - Detected 21 Ztest case(s): [kernel.queue.queue_api.queue_unique_append, kernel.queue.queue_api_1cpu.queue_multithread_competition, kernel.queue.queue_api.access_kernel_obj_with_priv_data, kernel.queue.queue_api.multiple_queues, kernel.queue.queue_api_1cpu.queue_poll_race, kernel.queue.queue_api.queue_alloc, kernel.queue.queue_api_1cpu.queue_get_2threads, kernel.queue.queue_api.queue_isr2thread, kernel.queue.queue_api.queue_thread2isr, kernel.queue.queue_api_1cpu.queue_merge_slist_wake, kernel.queue.queue_api.queue_merge_slist_order, kernel.queue.queue_api.queue_append_list_order, kernel.queue.queue_api.queue_insert_after, kernel.queue.queue_api.queue_prepend_order, kernel.queue.queue_api.queue_init, kernel.queue.queue_api.queue_define, kernel.queue.queue_api_1cpu.queue_thread2thread, kernel.queue.queue_api.queue_merge_list_error, kernel.queue.queue_api.queue_append_list_error, kernel.queue.queue_api_1cpu.queue_get_fail, kernel.queue.queue_api_1cpu.queue_loop] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue/zephyr/zephyr.elf
+2026-08-16 14:01:19,190 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue
+2026-08-16 14:01:19,190 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:01:19,190 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue
+2026-08-16 14:01:19,191 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue (qemu)
+2026-08-16 14:01:19,192 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue
+2026-08-16 14:01:19,216 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue already has 33 testcase(s) known: [<TestCase kernel.queue.queue_api.queue_append_list_order with None>, <TestCase kernel.queue.queue_api.access_kernel_obj_with_priv_data with None>, <TestCase kernel.queue.queue_api_1cpu.queue_supv_to_user with None>, <TestCase kernel.queue.queue_api_1cpu.queue_get_fail with None>, <TestCase kernel.queue.queue_api_1cpu.queue_thread2thread with None>, <TestCase kernel.queue.queue_api.queue_init with None>, <TestCase kernel.queue.queue_api.queue_isr2thread with None>, <TestCase kernel.queue.queue_api.queue_prepend_order with None>, <TestCase kernel.queue.queue_api.queue_insert_after with None>, <TestCase kernel.queue.queue_api.queue_get_null with None>, <TestCase kernel.queue.queue_api_1cpu.queue_poll_race with None>, <TestCase kernel.queue.queue_api.queue_append_list_error with None>, <TestCase kernel.queue.queue_api.queue_alloc with None>, <TestCase kernel.queue.queue_api.multiple_queues with None>, <TestCase kernel.queue.queue_api_1cpu.queue_merge_slist_wake with None>, <TestCase kernel.queue.queue_api.queue_alloc_append_null with None>, <TestCase kernel.queue.queue_api.queue_alloc_prepend_null with None>, <TestCase kernel.queue.queue_api.queue_peek_tail_null with None>, <TestCase kernel.queue.queue_api.queue_define with None>, <TestCase kernel.queue.queue_api_1cpu.queue_multithread_competition with None>, <TestCase kernel.queue.queue_api_1cpu.queue_get_2threads with None>, <TestCase kernel.queue.queue_api.queue_init_null with None>, <TestCase kernel.queue.queue_api.queue_alloc_append_user with None>, <TestCase kernel.queue.queue_api.queue_alloc_prepend_user with None>, <TestCase kernel.queue.queue_api.queue_is_empty_null with None>, <TestCase kernel.queue.queue_api.queue_thread2isr with None>, <TestCase kernel.queue.queue_api.queue_cancel_wait_error with None>, <TestCase kernel.queue.queue_api_1cpu.queue_loop with None>, <TestCase kernel.queue.queue_api.auto_free with None>, <TestCase kernel.queue.queue_api.queue_unique_append with None>, <TestCase kernel.queue.queue_api.queue_merge_list_error with None>, <TestCase kernel.queue.queue_api.queue_peek_head_null with None>, <TestCase kernel.queue.queue_api.queue_merge_slist_order with None>]
+2026-08-16 14:01:19,216 - twister - DEBUG - Detected 21 Ztest case(s): [kernel.queue.queue_api.queue_unique_append, kernel.queue.queue_api_1cpu.queue_multithread_competition, kernel.queue.queue_api.access_kernel_obj_with_priv_data, kernel.queue.queue_api.multiple_queues, kernel.queue.queue_api_1cpu.queue_poll_race, kernel.queue.queue_api.queue_alloc, kernel.queue.queue_api_1cpu.queue_get_2threads, kernel.queue.queue_api.queue_isr2thread, kernel.queue.queue_api.queue_thread2isr, kernel.queue.queue_api_1cpu.queue_merge_slist_wake, kernel.queue.queue_api.queue_merge_slist_order, kernel.queue.queue_api.queue_append_list_order, kernel.queue.queue_api.queue_insert_after, kernel.queue.queue_api.queue_prepend_order, kernel.queue.queue_api.queue_init, kernel.queue.queue_api.queue_define, kernel.queue.queue_api_1cpu.queue_thread2thread, kernel.queue.queue_api.queue_merge_list_error, kernel.queue.queue_api.queue_append_list_error, kernel.queue.queue_api_1cpu.queue_get_fail, kernel.queue.queue_api_1cpu.queue_loop] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue/zephyr/zephyr.elf
+2026-08-16 14:01:19,216 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue
+2026-08-16 14:01:19,216 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:01:19,216 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue
+2026-08-16 14:01:19,220 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue (qemu)
+2026-08-16 14:01:19,224 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue
+2026-08-16 14:01:19,685 - twister - DEBUG - QEMU (3966): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:01:19,685 - twister - DEBUG - QEMU (3966): Running TESTSUITE queue_api
+2026-08-16 14:01:19,685 - twister - DEBUG - QEMU (3966): ===================================================================
+2026-08-16 14:01:19,685 - twister - DEBUG - QEMU (3966): START - test_access_kernel_obj_with_priv_data
+2026-08-16 14:01:19,686 - twister - DEBUG - QEMU (3966):  PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+2026-08-16 14:01:19,686 - twister - DEBUG - QEMU (3966): ===================================================================
+2026-08-16 14:01:19,687 - twister - DEBUG - QEMU (3966): START - test_multiple_queues
+2026-08-16 14:01:19,688 - twister - DEBUG - QEMU (3966): ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+2026-08-16 14:01:19,688 - twister - DEBUG - QEMU (3966): 	Invalid spinlock 0x14
+2026-08-16 14:01:19,688 - twister - DEBUG - QEMU (3966): E: vector: 46  pc: 0x00004786  sr: 0x2700
+2026-08-16 14:01:19,688 - twister - DEBUG - QEMU (3966): E: format/vector: 0x0000
+2026-08-16 14:01:19,688 - twister - DEBUG - QEMU (3966): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:01:19,688 - twister - DEBUG - QEMU (3966): E: Current thread: 0xf07c (test_multiple_queues)
+2026-08-16 14:01:19,688 - twister - DEBUG - QEMU (3966): Caught system error -- reason 4 0
+2026-08-16 14:01:19,689 - twister - DEBUG - QEMU (3966): Fatal error was unexpected, aborting...
+2026-08-16 14:01:19,725 - twister - DEBUG - QEMU (3969): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:01:19,734 - twister - DEBUG - QEMU (3969): Running TESTSUITE queue_api
+2026-08-16 14:01:19,734 - twister - DEBUG - QEMU (3969): ===================================================================
+2026-08-16 14:01:19,737 - twister - DEBUG - QEMU (3969): START - test_access_kernel_obj_with_priv_data
+2026-08-16 14:01:19,762 - twister - DEBUG - QEMU (3969):  PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+2026-08-16 14:01:19,763 - twister - DEBUG - QEMU (3969): ===================================================================
+2026-08-16 14:01:19,763 - twister - DEBUG - QEMU (3969): START - test_multiple_queues
+2026-08-16 14:01:19,770 - twister - DEBUG - QEMU (3969): ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+2026-08-16 14:01:19,770 - twister - DEBUG - QEMU (3969): 	Invalid spinlock 0x14
+2026-08-16 14:01:19,774 - twister - DEBUG - QEMU (3969): E: vector: 46  pc: 0x0000476c  sr: 0x2700
+2026-08-16 14:01:19,774 - twister - DEBUG - QEMU (3969): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:01:19,775 - twister - DEBUG - QEMU (3969): E: Current thread: 0xf050 (test_multiple_queues)
+2026-08-16 14:01:19,776 - twister - DEBUG - QEMU (3969): Caught system error -- reason 4 0
+2026-08-16 14:01:19,776 - twister - DEBUG - QEMU (3969): Fatal error was unexpected, aborting...
+2026-08-16 14:01:28,858 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68000 in 77.04 seconds
+2026-08-16 14:01:28,858 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue.minimallibc
+2026-08-16 14:01:28,858 - twister - DEBUG - Determine test cases for test suite: kernel.queue.minimallibc
+2026-08-16 14:01:28,907 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue.minimallibc already has 33 testcase(s) known: [<TestCase kernel.queue.minimallibc.queue_api.queue_append_list_order with None>, <TestCase kernel.queue.minimallibc.queue_api.access_kernel_obj_with_priv_data with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_supv_to_user with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_get_fail with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_thread2thread with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_init with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_isr2thread with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_prepend_order with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_insert_after with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_get_null with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_poll_race with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_append_list_error with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_alloc with None>, <TestCase kernel.queue.minimallibc.queue_api.multiple_queues with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_merge_slist_wake with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_alloc_append_null with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_alloc_prepend_null with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_peek_tail_null with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_define with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_multithread_competition with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_get_2threads with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_init_null with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_alloc_append_user with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_alloc_prepend_user with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_is_empty_null with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_thread2isr with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_cancel_wait_error with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_loop with None>, <TestCase kernel.queue.minimallibc.queue_api.auto_free with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_unique_append with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_merge_list_error with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_peek_head_null with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_merge_slist_order with None>]
+2026-08-16 14:01:28,907 - twister - DEBUG - Detected 21 Ztest case(s): [kernel.queue.minimallibc.queue_api.queue_unique_append, kernel.queue.minimallibc.queue_api_1cpu.queue_multithread_competition, kernel.queue.minimallibc.queue_api.access_kernel_obj_with_priv_data, kernel.queue.minimallibc.queue_api.multiple_queues, kernel.queue.minimallibc.queue_api_1cpu.queue_poll_race, kernel.queue.minimallibc.queue_api.queue_alloc, kernel.queue.minimallibc.queue_api_1cpu.queue_get_2threads, kernel.queue.minimallibc.queue_api.queue_isr2thread, kernel.queue.minimallibc.queue_api.queue_thread2isr, kernel.queue.minimallibc.queue_api_1cpu.queue_merge_slist_wake, kernel.queue.minimallibc.queue_api.queue_merge_slist_order, kernel.queue.minimallibc.queue_api.queue_append_list_order, kernel.queue.minimallibc.queue_api.queue_insert_after, kernel.queue.minimallibc.queue_api.queue_prepend_order, kernel.queue.minimallibc.queue_api.queue_init, kernel.queue.minimallibc.queue_api.queue_define, kernel.queue.minimallibc.queue_api_1cpu.queue_thread2thread, kernel.queue.minimallibc.queue_api.queue_merge_list_error, kernel.queue.minimallibc.queue_api.queue_append_list_error, kernel.queue.minimallibc.queue_api_1cpu.queue_get_fail, kernel.queue.minimallibc.queue_api_1cpu.queue_loop] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc/zephyr/zephyr.elf
+2026-08-16 14:01:28,908 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue.minimallibc
+2026-08-16 14:01:28,908 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:01:28,908 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue.minimallibc
+2026-08-16 14:01:28,908 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue.minimallibc (qemu)
+2026-08-16 14:01:28,912 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue.minimallibc
+2026-08-16 14:01:29,297 - twister - DEBUG - QEMU (4304): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:01:29,298 - twister - DEBUG - QEMU (4304): Running TESTSUITE queue_api
+2026-08-16 14:01:29,298 - twister - DEBUG - QEMU (4304): ===================================================================
+2026-08-16 14:01:29,299 - twister - DEBUG - QEMU (4304): START - test_access_kernel_obj_with_priv_data
+2026-08-16 14:01:29,302 - twister - DEBUG - QEMU (4304):  PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+2026-08-16 14:01:29,302 - twister - DEBUG - QEMU (4304): ===================================================================
+2026-08-16 14:01:29,302 - twister - DEBUG - QEMU (4304): START - test_multiple_queues
+2026-08-16 14:01:29,303 - twister - DEBUG - QEMU (4304): ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+2026-08-16 14:01:29,303 - twister - DEBUG - QEMU (4304): 	Invalid spinlock 0x14
+2026-08-16 14:01:29,303 - twister - DEBUG - QEMU (4304): E: vector: 46  pc: 0x000054e4  sr: 0x2700
+2026-08-16 14:01:29,303 - twister - DEBUG - QEMU (4304): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:01:29,304 - twister - DEBUG - QEMU (4304): E: Current thread: 0xf590 (test_multiple_queues)
+2026-08-16 14:01:29,304 - twister - DEBUG - QEMU (4304): Caught system error -- reason 4 0
+2026-08-16 14:01:29,304 - twister - DEBUG - QEMU (4304): Fatal error was unexpected, aborting...
+2026-08-16 14:01:29,394 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/queue for qemu_m68k/qemu_virt_m68k_m68010 in 76.99 seconds
+2026-08-16 14:01:29,395 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue.minimallibc
+2026-08-16 14:01:29,395 - twister - DEBUG - Determine test cases for test suite: kernel.queue.minimallibc
+2026-08-16 14:01:29,428 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue.minimallibc already has 33 testcase(s) known: [<TestCase kernel.queue.minimallibc.queue_api.queue_append_list_order with None>, <TestCase kernel.queue.minimallibc.queue_api.access_kernel_obj_with_priv_data with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_supv_to_user with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_get_fail with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_thread2thread with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_init with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_isr2thread with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_prepend_order with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_insert_after with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_get_null with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_poll_race with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_append_list_error with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_alloc with None>, <TestCase kernel.queue.minimallibc.queue_api.multiple_queues with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_merge_slist_wake with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_alloc_append_null with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_alloc_prepend_null with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_peek_tail_null with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_define with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_multithread_competition with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_get_2threads with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_init_null with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_alloc_append_user with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_alloc_prepend_user with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_is_empty_null with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_thread2isr with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_cancel_wait_error with None>, <TestCase kernel.queue.minimallibc.queue_api_1cpu.queue_loop with None>, <TestCase kernel.queue.minimallibc.queue_api.auto_free with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_unique_append with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_merge_list_error with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_peek_head_null with None>, <TestCase kernel.queue.minimallibc.queue_api.queue_merge_slist_order with None>]
+2026-08-16 14:01:29,428 - twister - DEBUG - Detected 21 Ztest case(s): [kernel.queue.minimallibc.queue_api.queue_unique_append, kernel.queue.minimallibc.queue_api_1cpu.queue_multithread_competition, kernel.queue.minimallibc.queue_api.access_kernel_obj_with_priv_data, kernel.queue.minimallibc.queue_api.multiple_queues, kernel.queue.minimallibc.queue_api_1cpu.queue_poll_race, kernel.queue.minimallibc.queue_api.queue_alloc, kernel.queue.minimallibc.queue_api_1cpu.queue_get_2threads, kernel.queue.minimallibc.queue_api.queue_isr2thread, kernel.queue.minimallibc.queue_api.queue_thread2isr, kernel.queue.minimallibc.queue_api_1cpu.queue_merge_slist_wake, kernel.queue.minimallibc.queue_api.queue_merge_slist_order, kernel.queue.minimallibc.queue_api.queue_append_list_order, kernel.queue.minimallibc.queue_api.queue_insert_after, kernel.queue.minimallibc.queue_api.queue_prepend_order, kernel.queue.minimallibc.queue_api.queue_init, kernel.queue.minimallibc.queue_api.queue_define, kernel.queue.minimallibc.queue_api_1cpu.queue_thread2thread, kernel.queue.minimallibc.queue_api.queue_merge_list_error, kernel.queue.minimallibc.queue_api.queue_append_list_error, kernel.queue.minimallibc.queue_api_1cpu.queue_get_fail, kernel.queue.minimallibc.queue_api_1cpu.queue_loop] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc/zephyr/zephyr.elf
+2026-08-16 14:01:29,429 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue.minimallibc
+2026-08-16 14:01:29,429 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:01:29,429 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue.minimallibc
+2026-08-16 14:01:29,429 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue.minimallibc (qemu)
+2026-08-16 14:01:29,433 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue.minimallibc
+2026-08-16 14:01:29,778 - twister - DEBUG - QEMU (4311): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:01:29,779 - twister - DEBUG - QEMU (4311): Running TESTSUITE queue_api
+2026-08-16 14:01:29,779 - twister - DEBUG - QEMU (4311): ===================================================================
+2026-08-16 14:01:29,779 - twister - DEBUG - QEMU (4311): START - test_access_kernel_obj_with_priv_data
+2026-08-16 14:01:29,782 - twister - DEBUG - QEMU (4311):  PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+2026-08-16 14:01:29,782 - twister - DEBUG - QEMU (4311): ===================================================================
+2026-08-16 14:01:29,782 - twister - DEBUG - QEMU (4311): START - test_multiple_queues
+2026-08-16 14:01:29,784 - twister - DEBUG - QEMU (4311): ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+2026-08-16 14:01:29,784 - twister - DEBUG - QEMU (4311): 	Invalid spinlock 0x14
+2026-08-16 14:01:29,784 - twister - DEBUG - QEMU (4311): E: vector: 46  pc: 0x000054fe  sr: 0x2700
+2026-08-16 14:01:29,784 - twister - DEBUG - QEMU (4311): E: format/vector: 0x0000
+2026-08-16 14:01:29,784 - twister - DEBUG - QEMU (4311): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:01:29,784 - twister - DEBUG - QEMU (4311): E: Current thread: 0xf5bc (test_multiple_queues)
+2026-08-16 14:01:29,784 - twister - DEBUG - QEMU (4311): Caught system error -- reason 4 0
+2026-08-16 14:01:29,785 - twister - DEBUG - QEMU (4311): Fatal error was unexpected, aborting...
+2026-08-16 14:03:19,493 - twister - DEBUG - QEMU (3966) complete with failed (timeout) after 120.09750390052795 seconds
+2026-08-16 14:03:19,529 - twister - DEBUG - QEMU (3969) complete with failed (timeout) after 120.09845685958862 seconds
+2026-08-16 14:03:19,701 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:03:19,702 - twister - DEBUG - Expected suite names:['queue_api', 'queue_api_1cpu']
+2026-08-16 14:03:19,702 - twister - DEBUG - Detected suite names:['queue_api']
+2026-08-16 14:03:19,703 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue failed
+2026-08-16 14:03:19,708 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68010 kernel.queue                                 [31mFAILED[39m: Timeout
+2026-08-16 14:03:19,712 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue/handler.log[39m
+2026-08-16 14:03:19,712 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_api for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:03:19,715 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/lifo/lifo_api/kernel.lifo -DTC_RUNID=2e48e715fea7f90897684c3b254810b9 -DTC_NAME=kernel.lifo -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_api -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/lifo/lifo_api/kernel.lifo/qemu-fifo -DBOARD=qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:03:19,726 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:03:19,726 - twister - DEBUG - Expected suite names:['queue_api', 'queue_api_1cpu']
+2026-08-16 14:03:19,726 - twister - DEBUG - Detected suite names:['queue_api']
+2026-08-16 14:03:19,726 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue failed
+2026-08-16 14:03:19,726 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68000 kernel.queue                                 [31mFAILED[39m: Timeout
+2026-08-16 14:03:19,726 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue/handler.log[39m
+2026-08-16 14:03:19,727 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_api for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:03:19,727 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/lifo/lifo_api/kernel.lifo -DTC_RUNID=61f7157be25fd48da8daa895272c12c0 -DTC_NAME=kernel.lifo -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_api -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/lifo/lifo_api/kernel.lifo/qemu-fifo -DBOARD=qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:03:29,217 - twister - DEBUG - QEMU (4304) complete with failed (timeout) after 120.09725046157837 seconds
+2026-08-16 14:03:29,413 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:03:29,413 - twister - DEBUG - Expected suite names:['queue_api', 'queue_api_1cpu']
+2026-08-16 14:03:29,413 - twister - DEBUG - Detected suite names:['queue_api']
+2026-08-16 14:03:29,413 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.queue.minimallibc failed
+2026-08-16 14:03:29,413 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68000 kernel.queue.minimallibc                     [31mFAILED[39m: Timeout
+2026-08-16 14:03:29,414 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc/handler.log[39m
+2026-08-16 14:03:29,414 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_usage for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:03:29,414 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/lifo/lifo_usage/kernel.lifo.usage -DTC_RUNID=91401809414ac76359f761530e386353 -DTC_NAME=kernel.lifo.usage -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_usage -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/lifo/lifo_usage/kernel.lifo.usage/qemu-fifo -DBOARD=qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:03:29,698 - twister - DEBUG - QEMU (4311) complete with failed (timeout) after 120.09716391563416 seconds
+2026-08-16 14:03:29,934 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:03:29,934 - twister - DEBUG - Expected suite names:['queue_api', 'queue_api_1cpu']
+2026-08-16 14:03:29,934 - twister - DEBUG - Detected suite names:['queue_api']
+2026-08-16 14:03:29,935 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.queue.minimallibc failed
+2026-08-16 14:03:29,935 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68010 kernel.queue.minimallibc                     [31mFAILED[39m: Timeout
+2026-08-16 14:03:29,936 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/queue/kernel.queue.minimallibc/handler.log[39m
+2026-08-16 14:03:29,936 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_usage for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:03:29,937 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/lifo/lifo_usage/kernel.lifo.usage -DTC_RUNID=6a5d58b605417844f6bc3f84ffe90891 -DTC_NAME=kernel.lifo.usage -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_usage -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/lifo/lifo_usage/kernel.lifo.usage/qemu-fifo -DBOARD=qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:03:32,383 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_api for qemu_m68k/qemu_virt_m68k_m68000 in 12.65 seconds
+2026-08-16 14:03:32,383 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo
+2026-08-16 14:03:32,383 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_api for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:03:32,386 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/lifo/lifo_api/kernel.lifo
+2026-08-16 14:03:32,707 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_api for qemu_m68k/qemu_virt_m68k_m68010 in 12.99 seconds
+2026-08-16 14:03:32,708 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo
+2026-08-16 14:03:32,708 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_api for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:03:32,714 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/lifo/lifo_api/kernel.lifo
+2026-08-16 14:03:43,587 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_usage for qemu_m68k/qemu_virt_m68k_m68010 in 14.17 seconds
+2026-08-16 14:03:43,588 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo.usage
+2026-08-16 14:03:43,588 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_usage for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:03:43,591 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/lifo/lifo_usage/kernel.lifo.usage
+2026-08-16 14:03:44,084 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_usage for qemu_m68k/qemu_virt_m68k_m68000 in 14.14 seconds
+2026-08-16 14:03:44,084 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo.usage
+2026-08-16 14:03:44,084 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_usage for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:03:44,089 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/lifo/lifo_usage/kernel.lifo.usage
+2026-08-16 14:04:52,405 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_api for qemu_m68k/qemu_virt_m68k_m68000 in 80.02 seconds
+2026-08-16 14:04:52,405 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo
+2026-08-16 14:04:52,405 - twister - DEBUG - Determine test cases for test suite: kernel.lifo
+2026-08-16 14:04:52,437 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo already has 6 testcase(s) known: [<TestCase kernel.lifo.lifo_fail.lifo_get_fail with None>, <TestCase kernel.lifo.lifo_contexts.lifo_alloc_put with None>, <TestCase kernel.lifo.lifo_loop.lifo_loop with None>, <TestCase kernel.lifo.lifo_contexts.lifo_thread2isr with None>, <TestCase kernel.lifo.lifo_contexts_1cpu.lifo_thread2thread with None>, <TestCase kernel.lifo.lifo_contexts.lifo_isr2thread with None>]
+2026-08-16 14:04:52,437 - twister - DEBUG - Detected 6 Ztest case(s): [kernel.lifo.lifo_contexts.lifo_alloc_put, kernel.lifo.lifo_contexts.lifo_isr2thread, kernel.lifo.lifo_contexts.lifo_thread2isr, kernel.lifo.lifo_contexts_1cpu.lifo_thread2thread, kernel.lifo.lifo_fail.lifo_get_fail, kernel.lifo.lifo_loop.lifo_loop] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/lifo/lifo_api/kernel.lifo/zephyr/zephyr.elf
+2026-08-16 14:04:52,438 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo
+2026-08-16 14:04:52,438 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:04:52,438 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo
+2026-08-16 14:04:52,438 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo (qemu)
+2026-08-16 14:04:52,440 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo
+2026-08-16 14:04:53,076 - twister - DEBUG - QEMU (8196): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:04:53,080 - twister - DEBUG - QEMU (8196): Running TESTSUITE lifo_contexts
+2026-08-16 14:04:53,080 - twister - DEBUG - QEMU (8196): ===================================================================
+2026-08-16 14:04:53,081 - twister - DEBUG - QEMU (8196): START - test_lifo_alloc_put
+2026-08-16 14:04:53,109 - twister - DEBUG - QEMU (8196):  PASS - test_lifo_alloc_put in 0.001 seconds
+2026-08-16 14:04:53,113 - twister - DEBUG - QEMU (8196): ===================================================================
+2026-08-16 14:04:53,113 - twister - DEBUG - QEMU (8196): START - test_lifo_isr2thread
+2026-08-16 14:04:53,114 - twister - DEBUG - QEMU (8196): ASSERTION FAIL [z_waitq_head(&heap->wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+2026-08-16 14:04:53,114 - twister - DEBUG - QEMU (8196): 	unexpected heap waiters
+2026-08-16 14:04:53,114 - twister - DEBUG - QEMU (8196): E: vector: 46  pc: 0x00003096  sr: 0x2700
+2026-08-16 14:04:53,114 - twister - DEBUG - QEMU (8196): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:04:53,117 - twister - DEBUG - QEMU (8196): E: Current thread: 0xb62a (test_lifo_isr2thread)
+2026-08-16 14:04:53,120 - twister - DEBUG - QEMU (8196): E: Halting system
+2026-08-16 14:04:53,493 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_api for qemu_m68k/qemu_virt_m68k_m68010 in 80.78 seconds
+2026-08-16 14:04:53,493 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo
+2026-08-16 14:04:53,493 - twister - DEBUG - Determine test cases for test suite: kernel.lifo
+2026-08-16 14:04:53,524 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo already has 6 testcase(s) known: [<TestCase kernel.lifo.lifo_fail.lifo_get_fail with None>, <TestCase kernel.lifo.lifo_contexts.lifo_alloc_put with None>, <TestCase kernel.lifo.lifo_loop.lifo_loop with None>, <TestCase kernel.lifo.lifo_contexts.lifo_thread2isr with None>, <TestCase kernel.lifo.lifo_contexts_1cpu.lifo_thread2thread with None>, <TestCase kernel.lifo.lifo_contexts.lifo_isr2thread with None>]
+2026-08-16 14:04:53,524 - twister - DEBUG - Detected 6 Ztest case(s): [kernel.lifo.lifo_contexts.lifo_alloc_put, kernel.lifo.lifo_contexts.lifo_isr2thread, kernel.lifo.lifo_contexts.lifo_thread2isr, kernel.lifo.lifo_contexts_1cpu.lifo_thread2thread, kernel.lifo.lifo_fail.lifo_get_fail, kernel.lifo.lifo_loop.lifo_loop] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/lifo/lifo_api/kernel.lifo/zephyr/zephyr.elf
+2026-08-16 14:04:53,525 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo
+2026-08-16 14:04:53,525 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:04:53,525 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo
+2026-08-16 14:04:53,525 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo (qemu)
+2026-08-16 14:04:53,528 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo
+2026-08-16 14:04:54,018 - twister - DEBUG - QEMU (8233): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:04:54,019 - twister - DEBUG - QEMU (8233): Running TESTSUITE lifo_contexts
+2026-08-16 14:04:54,019 - twister - DEBUG - QEMU (8233): ===================================================================
+2026-08-16 14:04:54,019 - twister - DEBUG - QEMU (8233): START - test_lifo_alloc_put
+2026-08-16 14:04:54,027 - twister - DEBUG - QEMU (8233):  PASS - test_lifo_alloc_put in 0.001 seconds
+2026-08-16 14:04:54,028 - twister - DEBUG - QEMU (8233): ===================================================================
+2026-08-16 14:04:54,028 - twister - DEBUG - QEMU (8233): START - test_lifo_isr2thread
+2026-08-16 14:04:54,028 - twister - DEBUG - QEMU (8233): ASSERTION FAIL [z_waitq_head(&heap->wait_q) == ((void *)0)] @ WEST_TOPDIR/zephyr/kernel/mempool.c:78
+2026-08-16 14:04:54,029 - twister - DEBUG - QEMU (8233): 	unexpected heap waiters
+2026-08-16 14:04:54,033 - twister - DEBUG - QEMU (8233): E: vector: 46  pc: 0x000030b0  sr: 0x2700
+2026-08-16 14:04:54,033 - twister - DEBUG - QEMU (8233): E: format/vector: 0x0000
+2026-08-16 14:04:54,033 - twister - DEBUG - QEMU (8233): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:04:54,033 - twister - DEBUG - QEMU (8233): E: Current thread: 0xb65e (test_lifo_isr2thread)
+2026-08-16 14:04:54,033 - twister - DEBUG - QEMU (8233): E: Halting system
+2026-08-16 14:05:00,372 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_usage for qemu_m68k/qemu_virt_m68k_m68010 in 76.78 seconds
+2026-08-16 14:05:00,373 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo.usage
+2026-08-16 14:05:00,373 - twister - DEBUG - Determine test cases for test suite: kernel.lifo.usage
+2026-08-16 14:05:00,410 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo.usage already has 6 testcase(s) known: [<TestCase kernel.lifo.usage.lifo_usage_1cpu.timeout_lifo_thread with None>, <TestCase kernel.lifo.usage.lifo_usage_1cpu.lifo_wait with None>, <TestCase kernel.lifo.usage.lifo_usage_1cpu.lifo_nowait with None>, <TestCase kernel.lifo.usage.lifo_usage.timeout_non_empty_lifo with None>, <TestCase kernel.lifo.usage.lifo_usage_1cpu.timeout_threads_pend_on_lifo with None>, <TestCase kernel.lifo.usage.lifo_usage_1cpu.timeout_empty_lifo with None>]
+2026-08-16 14:05:00,410 - twister - DEBUG - Detected 6 Ztest case(s): [kernel.lifo.usage.lifo_usage_1cpu.timeout_threads_pend_on_lifo, kernel.lifo.usage.lifo_usage_1cpu.timeout_lifo_thread, kernel.lifo.usage.lifo_usage.timeout_non_empty_lifo, kernel.lifo.usage.lifo_usage_1cpu.timeout_empty_lifo, kernel.lifo.usage.lifo_usage_1cpu.lifo_wait, kernel.lifo.usage.lifo_usage_1cpu.lifo_nowait] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/lifo/lifo_usage/kernel.lifo.usage/zephyr/zephyr.elf
+2026-08-16 14:05:00,410 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo.usage
+2026-08-16 14:05:00,410 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:05:00,410 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo.usage
+2026-08-16 14:05:00,411 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo.usage (qemu)
+2026-08-16 14:05:00,412 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo.usage
+2026-08-16 14:05:00,789 - twister - DEBUG - QEMU (8516): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:05:00,790 - twister - DEBUG - QEMU (8516): Running TESTSUITE lifo_usage
+2026-08-16 14:05:00,790 - twister - DEBUG - QEMU (8516): ===================================================================
+2026-08-16 14:05:00,791 - twister - DEBUG - QEMU (8516): START - test_timeout_non_empty_lifo
+2026-08-16 14:05:00,792 - twister - DEBUG - QEMU (8516): ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+2026-08-16 14:05:00,793 - twister - DEBUG - QEMU (8516): 	Invalid spinlock 0x26
+2026-08-16 14:05:00,793 - twister - DEBUG - QEMU (8516): E: vector: 46  pc: 0x000034a6  sr: 0x2700
+2026-08-16 14:05:00,793 - twister - DEBUG - QEMU (8516): E: format/vector: 0x0000
+2026-08-16 14:05:00,793 - twister - DEBUG - QEMU (8516): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:05:00,793 - twister - DEBUG - QEMU (8516): E: Current thread: 0xc12c (test_timeout_non_empty_lifo)
+2026-08-16 14:05:00,794 - twister - DEBUG - QEMU (8516): E: Halting system
+2026-08-16 14:05:01,397 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/lifo/lifo_usage for qemu_m68k/qemu_virt_m68k_m68000 in 77.31 seconds
+2026-08-16 14:05:01,397 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo.usage
+2026-08-16 14:05:01,397 - twister - DEBUG - Determine test cases for test suite: kernel.lifo.usage
+2026-08-16 14:05:01,504 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo.usage already has 6 testcase(s) known: [<TestCase kernel.lifo.usage.lifo_usage_1cpu.timeout_lifo_thread with None>, <TestCase kernel.lifo.usage.lifo_usage_1cpu.lifo_wait with None>, <TestCase kernel.lifo.usage.lifo_usage_1cpu.lifo_nowait with None>, <TestCase kernel.lifo.usage.lifo_usage.timeout_non_empty_lifo with None>, <TestCase kernel.lifo.usage.lifo_usage_1cpu.timeout_threads_pend_on_lifo with None>, <TestCase kernel.lifo.usage.lifo_usage_1cpu.timeout_empty_lifo with None>]
+2026-08-16 14:05:01,504 - twister - DEBUG - Detected 6 Ztest case(s): [kernel.lifo.usage.lifo_usage_1cpu.timeout_threads_pend_on_lifo, kernel.lifo.usage.lifo_usage_1cpu.timeout_lifo_thread, kernel.lifo.usage.lifo_usage.timeout_non_empty_lifo, kernel.lifo.usage.lifo_usage_1cpu.timeout_empty_lifo, kernel.lifo.usage.lifo_usage_1cpu.lifo_wait, kernel.lifo.usage.lifo_usage_1cpu.lifo_nowait] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/lifo/lifo_usage/kernel.lifo.usage/zephyr/zephyr.elf
+2026-08-16 14:05:01,505 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo.usage
+2026-08-16 14:05:01,505 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:05:01,505 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo.usage
+2026-08-16 14:05:01,506 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo.usage (qemu)
+2026-08-16 14:05:01,508 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo.usage
+2026-08-16 14:05:01,867 - twister - DEBUG - QEMU (8535): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:05:01,868 - twister - DEBUG - QEMU (8535): Running TESTSUITE lifo_usage
+2026-08-16 14:05:01,868 - twister - DEBUG - QEMU (8535): ===================================================================
+2026-08-16 14:05:01,868 - twister - DEBUG - QEMU (8535): START - test_timeout_non_empty_lifo
+2026-08-16 14:05:01,870 - twister - DEBUG - QEMU (8535): ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+2026-08-16 14:05:01,870 - twister - DEBUG - QEMU (8535): 	Invalid spinlock 0x26
+2026-08-16 14:05:01,870 - twister - DEBUG - QEMU (8535): E: vector: 46  pc: 0x0000348c  sr: 0x2700
+2026-08-16 14:05:01,871 - twister - DEBUG - QEMU (8535): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:05:01,871 - twister - DEBUG - QEMU (8535): E: Current thread: 0xc0f8 (test_timeout_non_empty_lifo)
+2026-08-16 14:05:01,871 - twister - DEBUG - QEMU (8535): E: Halting system
+2026-08-16 14:06:52,785 - twister - DEBUG - QEMU (8196) complete with failed (timeout) after 120.09999895095825 seconds
+2026-08-16 14:06:52,941 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:06:52,941 - twister - DEBUG - Expected suite names:['lifo_loop', 'lifo_fail', 'lifo_contexts_1cpu', 'lifo_contexts']
+2026-08-16 14:06:52,941 - twister - DEBUG - Detected suite names:['lifo_contexts']
+2026-08-16 14:06:52,941 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo failed
+2026-08-16 14:06:52,942 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68000 kernel.lifo                                  [31mFAILED[39m: Timeout
+2026-08-16 14:06:52,942 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/lifo/lifo_api/kernel.lifo/handler.log[39m
+2026-08-16 14:06:52,942 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_usage for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:06:52,942 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_usage/kernel.fifo.usage -DTC_RUNID=ea234971129c2e88ffca42305759de5c -DTC_NAME=kernel.fifo.usage -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_usage -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_usage/kernel.fifo.usage/qemu-fifo -DBOARD=qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:06:53,817 - twister - DEBUG - QEMU (8233) complete with failed (timeout) after 120.1002550125122 seconds
+2026-08-16 14:06:54,028 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:06:54,029 - twister - DEBUG - Expected suite names:['lifo_loop', 'lifo_fail', 'lifo_contexts_1cpu', 'lifo_contexts']
+2026-08-16 14:06:54,029 - twister - DEBUG - Detected suite names:['lifo_contexts']
+2026-08-16 14:06:54,029 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo failed
+2026-08-16 14:06:54,029 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68010 kernel.lifo                                  [31mFAILED[39m: Timeout
+2026-08-16 14:06:54,029 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/lifo/lifo_api/kernel.lifo/handler.log[39m
+2026-08-16 14:06:54,029 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_usage for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:06:54,029 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_usage/kernel.fifo.usage -DTC_RUNID=bcc3f84e6cbc01a1423a3a3e7b934baf -DTC_NAME=kernel.fifo.usage -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_usage -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_usage/kernel.fifo.usage/qemu-fifo -DBOARD=qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:07:00,680 - twister - DEBUG - QEMU (8516) complete with failed (timeout) after 120.09999799728394 seconds
+2026-08-16 14:07:00,913 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:07:00,913 - twister - DEBUG - Expected suite names:['lifo_usage_1cpu', 'lifo_usage']
+2026-08-16 14:07:00,913 - twister - DEBUG - Detected suite names:['lifo_usage']
+2026-08-16 14:07:00,913 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.lifo.usage failed
+2026-08-16 14:07:00,913 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68010 kernel.lifo.usage                            [31mFAILED[39m: Timeout
+2026-08-16 14:07:00,913 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/lifo/lifo_usage/kernel.lifo.usage/handler.log[39m
+2026-08-16 14:07:00,913 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_api for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:07:00,914 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_api/kernel.fifo -DTC_RUNID=65bd69ec11c9f9afe3944a0702540ef1 -DTC_NAME=kernel.fifo -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_api -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_api/kernel.fifo/qemu-fifo -DBOARD=qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:07:01,755 - twister - DEBUG - QEMU (8535) complete with failed (timeout) after 120.09962940216064 seconds
+2026-08-16 14:07:02,009 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:07:02,009 - twister - DEBUG - Expected suite names:['lifo_usage_1cpu', 'lifo_usage']
+2026-08-16 14:07:02,009 - twister - DEBUG - Detected suite names:['lifo_usage']
+2026-08-16 14:07:02,009 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.lifo.usage failed
+2026-08-16 14:07:02,009 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68000 kernel.lifo.usage                            [31mFAILED[39m: Timeout
+2026-08-16 14:07:02,009 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/lifo/lifo_usage/kernel.lifo.usage/handler.log[39m
+2026-08-16 14:07:02,009 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_api for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:07:02,010 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_api/kernel.fifo -DTC_RUNID=3b4804b3e14297c5d751a978099badae -DTC_NAME=kernel.fifo -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_api -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_api/kernel.fifo/qemu-fifo -DBOARD=qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:07:04,759 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_usage for qemu_m68k/qemu_virt_m68k_m68010 in 11.81 seconds
+2026-08-16 14:07:04,759 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.usage
+2026-08-16 14:07:04,759 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_usage for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:07:04,760 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_usage/kernel.fifo.usage
+2026-08-16 14:07:05,633 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_usage for qemu_m68k/qemu_virt_m68k_m68000 in 11.60 seconds
+2026-08-16 14:07:05,633 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.usage
+2026-08-16 14:07:05,633 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_usage for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:07:05,636 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_usage/kernel.fifo.usage
+2026-08-16 14:07:16,082 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_api for qemu_m68k/qemu_virt_m68k_m68010 in 15.17 seconds
+2026-08-16 14:07:16,083 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo
+2026-08-16 14:07:16,083 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_api for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:07:16,089 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_api/kernel.fifo
+2026-08-16 14:07:17,346 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_api for qemu_m68k/qemu_virt_m68k_m68000 in 15.34 seconds
+2026-08-16 14:07:17,346 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo
+2026-08-16 14:07:17,347 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_api for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:07:17,350 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_api/kernel.fifo
+2026-08-16 14:08:24,460 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_usage for qemu_m68k/qemu_virt_m68k_m68010 in 79.70 seconds
+2026-08-16 14:08:24,460 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.usage
+2026-08-16 14:08:24,460 - twister - DEBUG - Determine test cases for test suite: kernel.fifo.usage
+2026-08-16 14:08:24,489 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.usage already has 3 testcase(s) known: [<TestCase kernel.fifo.usage.fifo_usage.single_fifo_play with None>, <TestCase kernel.fifo.usage.fifo_usage.dual_fifo_play with None>, <TestCase kernel.fifo.usage.fifo_usage.isr_fifo_play with None>]
+2026-08-16 14:08:24,489 - twister - DEBUG - Detected 3 Ztest case(s): [kernel.fifo.usage.fifo_usage.isr_fifo_play, kernel.fifo.usage.fifo_usage.dual_fifo_play, kernel.fifo.usage.fifo_usage.single_fifo_play] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_usage/kernel.fifo.usage/zephyr/zephyr.elf
+2026-08-16 14:08:24,489 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.usage
+2026-08-16 14:08:24,489 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:08:24,489 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.usage
+2026-08-16 14:08:24,490 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.usage (qemu)
+2026-08-16 14:08:24,492 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.usage
+2026-08-16 14:08:25,069 - twister - DEBUG - QEMU (12381): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:08:25,071 - twister - DEBUG - QEMU (12381): Running TESTSUITE fifo_usage
+2026-08-16 14:08:25,072 - twister - DEBUG - QEMU (12381): ===================================================================
+2026-08-16 14:08:25,076 - twister - DEBUG - QEMU (12381): START - test_dual_fifo_play
+2026-08-16 14:08:25,096 - twister - DEBUG - QEMU (12381):  PASS - test_dual_fifo_play in 0.001 seconds
+2026-08-16 14:08:25,097 - twister - DEBUG - QEMU (12381): ===================================================================
+2026-08-16 14:08:25,097 - twister - DEBUG - QEMU (12381): START - test_isr_fifo_play
+2026-08-16 14:08:25,097 - twister - DEBUG - QEMU (12381): E: heap corruption (double free?) at 0xaf5e
+2026-08-16 14:08:25,097 - twister - DEBUG - QEMU (12381): E: vector: 46  pc: 0x00002952  sr: 0x2700
+2026-08-16 14:08:25,097 - twister - DEBUG - QEMU (12381): E: format/vector: 0x0000
+2026-08-16 14:08:25,097 - twister - DEBUG - QEMU (12381): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:08:25,097 - twister - DEBUG - QEMU (12381): E: Current thread: 0xaef8 (unknown)
+2026-08-16 14:08:25,098 - twister - DEBUG - QEMU (12381): E: Halting system
+2026-08-16 14:08:25,509 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_usage for qemu_m68k/qemu_virt_m68k_m68000 in 79.88 seconds
+2026-08-16 14:08:25,509 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.usage
+2026-08-16 14:08:25,509 - twister - DEBUG - Determine test cases for test suite: kernel.fifo.usage
+2026-08-16 14:08:25,559 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.usage already has 3 testcase(s) known: [<TestCase kernel.fifo.usage.fifo_usage.single_fifo_play with None>, <TestCase kernel.fifo.usage.fifo_usage.dual_fifo_play with None>, <TestCase kernel.fifo.usage.fifo_usage.isr_fifo_play with None>]
+2026-08-16 14:08:25,559 - twister - DEBUG - Detected 3 Ztest case(s): [kernel.fifo.usage.fifo_usage.isr_fifo_play, kernel.fifo.usage.fifo_usage.dual_fifo_play, kernel.fifo.usage.fifo_usage.single_fifo_play] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_usage/kernel.fifo.usage/zephyr/zephyr.elf
+2026-08-16 14:08:25,559 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.usage
+2026-08-16 14:08:25,560 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:08:25,560 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.usage
+2026-08-16 14:08:25,560 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.usage (qemu)
+2026-08-16 14:08:25,562 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.usage
+2026-08-16 14:08:25,950 - twister - DEBUG - QEMU (12421): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:08:25,951 - twister - DEBUG - QEMU (12421): Running TESTSUITE fifo_usage
+2026-08-16 14:08:25,951 - twister - DEBUG - QEMU (12421): ===================================================================
+2026-08-16 14:08:25,951 - twister - DEBUG - QEMU (12421): START - test_dual_fifo_play
+2026-08-16 14:08:25,955 - twister - DEBUG - QEMU (12421):  PASS - test_dual_fifo_play in 0.001 seconds
+2026-08-16 14:08:25,955 - twister - DEBUG - QEMU (12421): ===================================================================
+2026-08-16 14:08:25,955 - twister - DEBUG - QEMU (12421): START - test_isr_fifo_play
+2026-08-16 14:08:25,956 - twister - DEBUG - QEMU (12421): E: heap corruption (double free?) at 0xaf2a
+2026-08-16 14:08:25,956 - twister - DEBUG - QEMU (12421): E: vector: 46  pc: 0x00002938  sr: 0x2700
+2026-08-16 14:08:25,958 - twister - DEBUG - QEMU (12421): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:08:25,959 - twister - DEBUG - QEMU (12421): E: Current thread: 0xaec4 (unknown)
+2026-08-16 14:08:25,960 - twister - DEBUG - QEMU (12421): E: Halting system
+2026-08-16 14:08:36,248 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_api for qemu_m68k/qemu_virt_m68k_m68010 in 80.17 seconds
+2026-08-16 14:08:36,248 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo
+2026-08-16 14:08:36,248 - twister - DEBUG - Determine test cases for test suite: kernel.fifo
+2026-08-16 14:08:36,280 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo already has 13 testcase(s) known: [<TestCase kernel.fifo.fifo_api.fifo_alloc_put with None>, <TestCase kernel.fifo.fifo_api.fifo_get_fail with None>, <TestCase kernel.fifo.fifo_api.fifo_put_list_order with None>, <TestCase kernel.fifo.fifo_api.fifo_is_empty_thread with None>, <TestCase kernel.fifo.fifo_api.fifo_is_empty_isr with None>, <TestCase kernel.fifo.fifo_api.fifo_peek with None>, <TestCase kernel.fifo.fifo_api_1cpu.fifo_cancel_wait with None>, <TestCase kernel.fifo.fifo_api_1cpu.fifo_loop with None>, <TestCase kernel.fifo.fifo_api.fifo_define with None>, <TestCase kernel.fifo.fifo_api.fifo_isr2thread with None>, <TestCase kernel.fifo.fifo_api_1cpu.fifo_thread2thread with None>, <TestCase kernel.fifo.fifo_api.fifo_thread2isr with None>, <TestCase kernel.fifo.fifo_api.fifo_put_slist_order with None>]
+2026-08-16 14:08:36,280 - twister - DEBUG - Detected 13 Ztest case(s): [kernel.fifo.fifo_api_1cpu.fifo_cancel_wait, kernel.fifo.fifo_api.fifo_alloc_put, kernel.fifo.fifo_api.fifo_peek, kernel.fifo.fifo_api.fifo_is_empty_isr, kernel.fifo.fifo_api.fifo_is_empty_thread, kernel.fifo.fifo_api.fifo_isr2thread, kernel.fifo.fifo_api.fifo_thread2isr, kernel.fifo.fifo_api.fifo_put_slist_order, kernel.fifo.fifo_api.fifo_put_list_order, kernel.fifo.fifo_api.fifo_define, kernel.fifo.fifo_api_1cpu.fifo_thread2thread, kernel.fifo.fifo_api.fifo_get_fail, kernel.fifo.fifo_api_1cpu.fifo_loop] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_api/kernel.fifo/zephyr/zephyr.elf
+2026-08-16 14:08:36,280 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo
+2026-08-16 14:08:36,280 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:08:36,280 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo
+2026-08-16 14:08:36,281 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo (qemu)
+2026-08-16 14:08:36,282 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo
+2026-08-16 14:08:36,681 - twister - DEBUG - QEMU (12812): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:08:36,681 - twister - DEBUG - QEMU (12812): Running TESTSUITE fifo_api
+2026-08-16 14:08:36,683 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,693 - twister - DEBUG - QEMU (12812): START - test_fifo_alloc_put
+2026-08-16 14:08:36,724 - twister - DEBUG - QEMU (12812):  PASS - test_fifo_alloc_put in 0.001 seconds
+2026-08-16 14:08:36,725 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,726 - twister - DEBUG - QEMU (12812): START - test_fifo_define
+2026-08-16 14:08:36,727 - twister - DEBUG - QEMU (12812):  PASS - test_fifo_define in 0.001 seconds
+2026-08-16 14:08:36,728 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,728 - twister - DEBUG - QEMU (12812): START - test_fifo_get_fail
+2026-08-16 14:08:36,733 - twister - DEBUG - QEMU (12812):  PASS - test_fifo_get_fail in 0.108 seconds
+2026-08-16 14:08:36,734 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,736 - twister - DEBUG - QEMU (12812): START - test_fifo_is_empty_isr
+2026-08-16 14:08:36,736 - twister - DEBUG - QEMU (12812):  PASS - test_fifo_is_empty_isr in 0.001 seconds
+2026-08-16 14:08:36,737 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,737 - twister - DEBUG - QEMU (12812): START - test_fifo_is_empty_thread
+2026-08-16 14:08:36,737 - twister - DEBUG - QEMU (12812):  PASS - test_fifo_is_empty_thread in 0.001 seconds
+2026-08-16 14:08:36,737 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,737 - twister - DEBUG - QEMU (12812): START - test_fifo_isr2thread
+2026-08-16 14:08:36,737 - twister - DEBUG - QEMU (12812):  PASS - test_fifo_isr2thread in 0.001 seconds
+2026-08-16 14:08:36,737 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,737 - twister - DEBUG - QEMU (12812): START - test_fifo_peek
+2026-08-16 14:08:36,737 - twister - DEBUG - QEMU (12812):  PASS - test_fifo_peek in 0.001 seconds
+2026-08-16 14:08:36,737 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,737 - twister - DEBUG - QEMU (12812): START - test_fifo_put_list_order
+2026-08-16 14:08:36,738 - twister - DEBUG - QEMU (12812):  PASS - test_fifo_put_list_order in 0.001 seconds
+2026-08-16 14:08:36,739 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,739 - twister - DEBUG - QEMU (12812): START - test_fifo_put_slist_order
+2026-08-16 14:08:36,740 - twister - DEBUG - QEMU (12812):  PASS - test_fifo_put_slist_order in 0.001 seconds
+2026-08-16 14:08:36,742 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,742 - twister - DEBUG - QEMU (12812): START - test_fifo_thread2isr
+2026-08-16 14:08:36,743 - twister - DEBUG - QEMU (12812):  PASS - test_fifo_thread2isr in 0.001 seconds
+2026-08-16 14:08:36,743 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,743 - twister - DEBUG - QEMU (12812): TESTSUITE fifo_api succeeded
+2026-08-16 14:08:36,743 - twister - DEBUG - QEMU (12812): Running TESTSUITE fifo_api_1cpu
+2026-08-16 14:08:36,743 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,743 - twister - DEBUG - QEMU (12812): START - test_fifo_cancel_wait
+2026-08-16 14:08:36,745 - twister - DEBUG - QEMU (12812):  PASS - test_fifo_cancel_wait in 0.112 seconds
+2026-08-16 14:08:36,746 - twister - DEBUG - QEMU (12812): ===================================================================
+2026-08-16 14:08:36,746 - twister - DEBUG - QEMU (12812): START - test_fifo_loop
+2026-08-16 14:08:36,747 - twister - DEBUG - QEMU (12812): * Pass data by fifo in loop 0
+2026-08-16 14:08:36,748 - twister - DEBUG - QEMU (12812): main fifo put ---> isr fifo get
+2026-08-16 14:08:36,749 - twister - DEBUG - QEMU (12812): E: heap corruption (double free?) at 0xcf22
+2026-08-16 14:08:36,749 - twister - DEBUG - QEMU (12812): E: vector: 46  pc: 0x00003556  sr: 0x2700
+2026-08-16 14:08:36,749 - twister - DEBUG - QEMU (12812): E: format/vector: 0x0000
+2026-08-16 14:08:36,749 - twister - DEBUG - QEMU (12812): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:08:36,749 - twister - DEBUG - QEMU (12812): E: Current thread: 0xd00c (test_fifo_loop)
+2026-08-16 14:08:36,749 - twister - DEBUG - QEMU (12812): E: Halting system
+2026-08-16 14:08:37,171 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_api for qemu_m68k/qemu_virt_m68k_m68000 in 79.82 seconds
+2026-08-16 14:08:37,172 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo
+2026-08-16 14:08:37,172 - twister - DEBUG - Determine test cases for test suite: kernel.fifo
+2026-08-16 14:08:37,210 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo already has 13 testcase(s) known: [<TestCase kernel.fifo.fifo_api.fifo_alloc_put with None>, <TestCase kernel.fifo.fifo_api.fifo_get_fail with None>, <TestCase kernel.fifo.fifo_api.fifo_put_list_order with None>, <TestCase kernel.fifo.fifo_api.fifo_is_empty_thread with None>, <TestCase kernel.fifo.fifo_api.fifo_is_empty_isr with None>, <TestCase kernel.fifo.fifo_api.fifo_peek with None>, <TestCase kernel.fifo.fifo_api_1cpu.fifo_cancel_wait with None>, <TestCase kernel.fifo.fifo_api_1cpu.fifo_loop with None>, <TestCase kernel.fifo.fifo_api.fifo_define with None>, <TestCase kernel.fifo.fifo_api.fifo_isr2thread with None>, <TestCase kernel.fifo.fifo_api_1cpu.fifo_thread2thread with None>, <TestCase kernel.fifo.fifo_api.fifo_thread2isr with None>, <TestCase kernel.fifo.fifo_api.fifo_put_slist_order with None>]
+2026-08-16 14:08:37,210 - twister - DEBUG - Detected 13 Ztest case(s): [kernel.fifo.fifo_api_1cpu.fifo_cancel_wait, kernel.fifo.fifo_api.fifo_alloc_put, kernel.fifo.fifo_api.fifo_peek, kernel.fifo.fifo_api.fifo_is_empty_isr, kernel.fifo.fifo_api.fifo_is_empty_thread, kernel.fifo.fifo_api.fifo_isr2thread, kernel.fifo.fifo_api.fifo_thread2isr, kernel.fifo.fifo_api.fifo_put_slist_order, kernel.fifo.fifo_api.fifo_put_list_order, kernel.fifo.fifo_api.fifo_define, kernel.fifo.fifo_api_1cpu.fifo_thread2thread, kernel.fifo.fifo_api.fifo_get_fail, kernel.fifo.fifo_api_1cpu.fifo_loop] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_api/kernel.fifo/zephyr/zephyr.elf
+2026-08-16 14:08:37,210 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo
+2026-08-16 14:08:37,210 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:08:37,210 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo
+2026-08-16 14:08:37,211 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo (qemu)
+2026-08-16 14:08:37,213 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo
+2026-08-16 14:08:37,578 - twister - DEBUG - QEMU (12831): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:08:37,579 - twister - DEBUG - QEMU (12831): Running TESTSUITE fifo_api
+2026-08-16 14:08:37,579 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,579 - twister - DEBUG - QEMU (12831): START - test_fifo_alloc_put
+2026-08-16 14:08:37,583 - twister - DEBUG - QEMU (12831):  PASS - test_fifo_alloc_put in 0.001 seconds
+2026-08-16 14:08:37,583 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,583 - twister - DEBUG - QEMU (12831): START - test_fifo_define
+2026-08-16 14:08:37,584 - twister - DEBUG - QEMU (12831):  PASS - test_fifo_define in 0.001 seconds
+2026-08-16 14:08:37,584 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,584 - twister - DEBUG - QEMU (12831): START - test_fifo_get_fail
+2026-08-16 14:08:37,634 - twister - DEBUG - QEMU (12831):  PASS - test_fifo_get_fail in 0.108 seconds
+2026-08-16 14:08:37,634 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,634 - twister - DEBUG - QEMU (12831): START - test_fifo_is_empty_isr
+2026-08-16 14:08:37,635 - twister - DEBUG - QEMU (12831):  PASS - test_fifo_is_empty_isr in 0.001 seconds
+2026-08-16 14:08:37,635 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,635 - twister - DEBUG - QEMU (12831): START - test_fifo_is_empty_thread
+2026-08-16 14:08:37,635 - twister - DEBUG - QEMU (12831):  PASS - test_fifo_is_empty_thread in 0.001 seconds
+2026-08-16 14:08:37,635 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,635 - twister - DEBUG - QEMU (12831): START - test_fifo_isr2thread
+2026-08-16 14:08:37,636 - twister - DEBUG - QEMU (12831):  PASS - test_fifo_isr2thread in 0.001 seconds
+2026-08-16 14:08:37,636 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,636 - twister - DEBUG - QEMU (12831): START - test_fifo_peek
+2026-08-16 14:08:37,636 - twister - DEBUG - QEMU (12831):  PASS - test_fifo_peek in 0.001 seconds
+2026-08-16 14:08:37,636 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,636 - twister - DEBUG - QEMU (12831): START - test_fifo_put_list_order
+2026-08-16 14:08:37,636 - twister - DEBUG - QEMU (12831):  PASS - test_fifo_put_list_order in 0.001 seconds
+2026-08-16 14:08:37,637 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,637 - twister - DEBUG - QEMU (12831): START - test_fifo_put_slist_order
+2026-08-16 14:08:37,637 - twister - DEBUG - QEMU (12831):  PASS - test_fifo_put_slist_order in 0.001 seconds
+2026-08-16 14:08:37,637 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,637 - twister - DEBUG - QEMU (12831): START - test_fifo_thread2isr
+2026-08-16 14:08:37,637 - twister - DEBUG - QEMU (12831):  PASS - test_fifo_thread2isr in 0.001 seconds
+2026-08-16 14:08:37,637 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,637 - twister - DEBUG - QEMU (12831): TESTSUITE fifo_api succeeded
+2026-08-16 14:08:37,637 - twister - DEBUG - QEMU (12831): Running TESTSUITE fifo_api_1cpu
+2026-08-16 14:08:37,638 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,638 - twister - DEBUG - QEMU (12831): START - test_fifo_cancel_wait
+2026-08-16 14:08:37,640 - twister - DEBUG - QEMU (12831):  PASS - test_fifo_cancel_wait in 0.112 seconds
+2026-08-16 14:08:37,640 - twister - DEBUG - QEMU (12831): ===================================================================
+2026-08-16 14:08:37,640 - twister - DEBUG - QEMU (12831): START - test_fifo_loop
+2026-08-16 14:08:37,640 - twister - DEBUG - QEMU (12831): * Pass data by fifo in loop 0
+2026-08-16 14:08:37,641 - twister - DEBUG - QEMU (12831): main fifo put ---> isr fifo get
+2026-08-16 14:08:37,641 - twister - DEBUG - QEMU (12831): E: heap corruption (double free?) at 0xceea
+2026-08-16 14:08:37,641 - twister - DEBUG - QEMU (12831): E: vector: 46  pc: 0x0000353c  sr: 0x2700
+2026-08-16 14:08:37,642 - twister - DEBUG - QEMU (12831): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:08:37,642 - twister - DEBUG - QEMU (12831): E: Current thread: 0xcfd4 (test_fifo_loop)
+2026-08-16 14:08:37,642 - twister - DEBUG - QEMU (12831): E: Halting system
+2026-08-16 14:10:24,796 - twister - DEBUG - QEMU (12381) complete with failed (timeout) after 120.09721684455872 seconds
+2026-08-16 14:10:24,993 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:10:24,993 - twister - DEBUG - Expected suite names:['fifo_usage']
+2026-08-16 14:10:24,993 - twister - DEBUG - Detected suite names:['fifo_usage']
+2026-08-16 14:10:24,993 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.usage failed
+2026-08-16 14:10:24,993 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68010 kernel.fifo.usage                            [31mFAILED[39m: Timeout
+2026-08-16 14:10:24,994 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_usage/kernel.fifo.usage/handler.log[39m
+2026-08-16 14:10:24,994 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_timeout for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:10:24,994 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_timeout/kernel.fifo.timeout -DTC_RUNID=1757c70e92e1ac66f16ef1bf375207ca -DTC_NAME=kernel.fifo.timeout -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_timeout -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_timeout/kernel.fifo.timeout/qemu-fifo -DBOARD=qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:10:25,841 - twister - DEBUG - QEMU (12421) complete with failed (timeout) after 120.09648847579956 seconds
+2026-08-16 14:10:26,062 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:10:26,063 - twister - DEBUG - Expected suite names:['fifo_usage']
+2026-08-16 14:10:26,063 - twister - DEBUG - Detected suite names:['fifo_usage']
+2026-08-16 14:10:26,063 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.usage failed
+2026-08-16 14:10:26,063 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68000 kernel.fifo.usage                            [31mFAILED[39m: Timeout
+2026-08-16 14:10:26,064 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_usage/kernel.fifo.usage/handler.log[39m
+2026-08-16 14:10:26,066 - twister - DEBUG - Running cmake on /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_timeout for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:10:26,066 - twister - DEBUG - Calling cmake: /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake -B/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_timeout/kernel.fifo.timeout -DTC_RUNID=2898514a7b2b3a34b9edc155cdd337e4 -DTC_NAME=kernel.fifo.timeout -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/scratch/5c70f00d8d01/zephyr-venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_timeout -DQEMU_PIPE=/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_timeout/kernel.fifo.timeout/qemu-fifo -DBOARD=qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:10:36,556 - twister - DEBUG - QEMU (12812) complete with failed (timeout) after 120.09604477882385 seconds
+2026-08-16 14:10:36,783 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:10:36,784 - twister - DEBUG - Expected suite names:['fifo_api', 'fifo_api_1cpu']
+2026-08-16 14:10:36,784 - twister - DEBUG - Detected suite names:['fifo_api', 'fifo_api_1cpu']
+2026-08-16 14:10:36,784 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo failed
+2026-08-16 14:10:36,784 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68010 kernel.fifo                                  [31mFAILED[39m: Timeout
+2026-08-16 14:10:36,784 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_api/kernel.fifo/handler.log[39m
+2026-08-16 14:10:37,493 - twister - DEBUG - QEMU (12831) complete with failed (timeout) after 120.1017541885376 seconds
+2026-08-16 14:10:37,718 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:10:37,718 - twister - DEBUG - Expected suite names:['fifo_api', 'fifo_api_1cpu']
+2026-08-16 14:10:37,718 - twister - DEBUG - Detected suite names:['fifo_api', 'fifo_api_1cpu']
+2026-08-16 14:10:37,718 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo failed
+2026-08-16 14:10:37,719 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68000 kernel.fifo                                  [31mFAILED[39m: Timeout
+2026-08-16 14:10:37,719 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_api/kernel.fifo/handler.log[39m
+2026-08-16 14:10:37,914 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_timeout for qemu_m68k/qemu_virt_m68k_m68010 in 12.92 seconds
+2026-08-16 14:10:37,914 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.timeout
+2026-08-16 14:10:37,914 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_timeout for qemu_m68k/qemu_virt_m68k_m68010
+2026-08-16 14:10:37,916 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_timeout/kernel.fifo.timeout
+2026-08-16 14:10:38,825 - twister - DEBUG - Finished running cmake /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_timeout for qemu_m68k/qemu_virt_m68k_m68000 in 12.76 seconds
+2026-08-16 14:10:38,826 - twister - DEBUG - build test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.timeout
+2026-08-16 14:10:38,826 - twister - DEBUG - Building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_timeout for qemu_m68k/qemu_virt_m68k_m68000
+2026-08-16 14:10:38,828 - twister - DEBUG - Running /workspace/scratch/5c70f00d8d01/zephyr-venv/lib/python3.12/site-packages/bin/cmake --build /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_timeout/kernel.fifo.timeout
+2026-08-16 14:11:06,712 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_timeout for qemu_m68k/qemu_virt_m68k_m68010 in 28.80 seconds
+2026-08-16 14:11:06,712 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.timeout
+2026-08-16 14:11:06,712 - twister - DEBUG - Determine test cases for test suite: kernel.fifo.timeout
+2026-08-16 14:11:06,747 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.timeout already has 6 testcase(s) known: [<TestCase kernel.fifo.timeout.fifo_timeout_1cpu.timeout_fifo_thread with None>, <TestCase kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_on_fifo with None>, <TestCase kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_on_dual_fifos with None>, <TestCase kernel.fifo.timeout.fifo_timeout.timeout_non_empty_fifo with None>, <TestCase kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_fail_on_fifo with None>, <TestCase kernel.fifo.timeout.fifo_timeout_1cpu.timeout_empty_fifo with None>]
+2026-08-16 14:11:06,747 - twister - DEBUG - Detected 6 Ztest case(s): [kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_fail_on_fifo, kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_on_dual_fifos, kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_on_fifo, kernel.fifo.timeout.fifo_timeout_1cpu.timeout_fifo_thread, kernel.fifo.timeout.fifo_timeout.timeout_non_empty_fifo, kernel.fifo.timeout.fifo_timeout_1cpu.timeout_empty_fifo] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_timeout/kernel.fifo.timeout/zephyr/zephyr.elf
+2026-08-16 14:11:06,749 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.timeout
+2026-08-16 14:11:06,750 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:11:06,750 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.timeout
+2026-08-16 14:11:06,750 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.timeout (qemu)
+2026-08-16 14:11:06,754 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.timeout
+2026-08-16 14:11:07,383 - twister - DEBUG - QEMU (14381): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:11:07,398 - twister - DEBUG - QEMU (14381): Running TESTSUITE fifo_timeout
+2026-08-16 14:11:07,401 - twister - DEBUG - QEMU (14381): ===================================================================
+2026-08-16 14:11:07,402 - twister - DEBUG - QEMU (14381): START - test_timeout_non_empty_fifo
+2026-08-16 14:11:07,403 - twister - DEBUG - QEMU (14381): E: heap corruption (double free?) at 0x98aa
+2026-08-16 14:11:07,404 - twister - DEBUG - QEMU (14381): E: vector: 46  pc: 0x00003066  sr: 0x2700
+2026-08-16 14:11:07,404 - twister - DEBUG - QEMU (14381): E: format/vector: 0x0000
+2026-08-16 14:11:07,405 - twister - DEBUG - QEMU (14381): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:11:07,405 - twister - DEBUG - QEMU (14381): E: Current thread: 0x9a14 (test_timeout_non_empty_fifo)
+2026-08-16 14:11:07,405 - twister - DEBUG - QEMU (14381): E: Halting system
+2026-08-16 14:11:21,682 - twister - DEBUG - Finished building /workspace/scratch/5c70f00d8d01/preview-ws/zephyr/tests/kernel/fifo/fifo_timeout for qemu_m68k/qemu_virt_m68k_m68000 in 42.86 seconds
+2026-08-16 14:11:21,682 - twister - DEBUG - Determine test cases for test instance: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.timeout
+2026-08-16 14:11:21,682 - twister - DEBUG - Determine test cases for test suite: kernel.fifo.timeout
+2026-08-16 14:11:21,710 - twister - DEBUG - Test instance qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.timeout already has 6 testcase(s) known: [<TestCase kernel.fifo.timeout.fifo_timeout_1cpu.timeout_fifo_thread with None>, <TestCase kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_on_fifo with None>, <TestCase kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_on_dual_fifos with None>, <TestCase kernel.fifo.timeout.fifo_timeout.timeout_non_empty_fifo with None>, <TestCase kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_fail_on_fifo with None>, <TestCase kernel.fifo.timeout.fifo_timeout_1cpu.timeout_empty_fifo with None>]
+2026-08-16 14:11:21,710 - twister - DEBUG - Detected 6 Ztest case(s): [kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_fail_on_fifo, kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_on_dual_fifos, kernel.fifo.timeout.fifo_timeout_1cpu.timeout_threads_pend_on_fifo, kernel.fifo.timeout.fifo_timeout_1cpu.timeout_fifo_thread, kernel.fifo.timeout.fifo_timeout.timeout_non_empty_fifo, kernel.fifo.timeout.fifo_timeout_1cpu.timeout_empty_fifo] in /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_timeout/kernel.fifo.timeout/zephyr/zephyr.elf
+2026-08-16 14:11:21,711 - twister - DEBUG - run test: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.timeout
+2026-08-16 14:11:21,711 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-08-16 14:11:21,711 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.timeout
+2026-08-16 14:11:21,711 - twister - DEBUG - Running qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.timeout (qemu)
+2026-08-16 14:11:21,713 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.timeout
+2026-08-16 14:11:22,113 - twister - DEBUG - QEMU (14925): *** Booting Zephyr OS build 4.4.99 ***
+2026-08-16 14:11:22,114 - twister - DEBUG - QEMU (14925): Running TESTSUITE fifo_timeout
+2026-08-16 14:11:22,114 - twister - DEBUG - QEMU (14925): ===================================================================
+2026-08-16 14:11:22,115 - twister - DEBUG - QEMU (14925): START - test_timeout_non_empty_fifo
+2026-08-16 14:11:22,129 - twister - DEBUG - QEMU (14925): E: heap corruption (double free?) at 0x987a
+2026-08-16 14:11:22,134 - twister - DEBUG - QEMU (14925): E: vector: 46  pc: 0x0000304c  sr: 0x2700
+2026-08-16 14:11:22,138 - twister - DEBUG - QEMU (14925): E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+2026-08-16 14:11:22,138 - twister - DEBUG - QEMU (14925): E: Current thread: 0x99e4 (test_timeout_non_empty_fifo)
+2026-08-16 14:11:22,138 - twister - DEBUG - QEMU (14925): E: Halting system
+2026-08-16 14:13:07,035 - twister - DEBUG - QEMU (14381) complete with failed (timeout) after 120.01774644851685 seconds
+2026-08-16 14:13:07,257 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:13:07,258 - twister - DEBUG - Expected suite names:['fifo_timeout', 'fifo_timeout_1cpu']
+2026-08-16 14:13:07,258 - twister - DEBUG - Detected suite names:['fifo_timeout']
+2026-08-16 14:13:07,258 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68010/zephyr/gnu/kernel.fifo.timeout failed
+2026-08-16 14:13:07,260 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68010 kernel.fifo.timeout                          [31mFAILED[39m: Timeout
+2026-08-16 14:13:07,261 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010/zephyr_gnu/tests/kernel/fifo/fifo_timeout/kernel.fifo.timeout/handler.log[39m
+2026-08-16 14:13:22,012 - twister - DEBUG - QEMU (14925) complete with failed (timeout) after 120.10078930854797 seconds
+2026-08-16 14:13:22,217 - twister - DEBUG - return code from QEMU (None): 0
+2026-08-16 14:13:22,217 - twister - DEBUG - Expected suite names:['fifo_timeout', 'fifo_timeout_1cpu']
+2026-08-16 14:13:22,217 - twister - DEBUG - Detected suite names:['fifo_timeout']
+2026-08-16 14:13:22,217 - twister - DEBUG - run status: qemu_m68k/qemu_virt_m68k_m68000/zephyr/gnu/kernel.fifo.timeout failed
+2026-08-16 14:13:22,217 - twister - ERROR - qemu_m68k/qemu_virt_m68k_m68000 kernel.fifo.timeout                          [31mFAILED[39m: Timeout
+2026-08-16 14:13:22,218 - twister - ERROR - see: [33m/workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000/zephyr_gnu/tests/kernel/fifo/fifo_timeout/kernel.fifo.timeout/handler.log[39m
+2026-08-16 14:13:22,219 - twister - INFO - 7 test scenarios (14 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-08-16 14:13:22,220 - twister - INFO - [31m0 of 14[39m executed test configurations passed (0.00%), 0 built (not run), [31m14[39m failed, 0 errored, with no warnings in 817.64 seconds.
+2026-08-16 14:13:22,221 - twister - INFO - 30 of 152 executed test cases passed (19.74%), 108 blocked, 14 failed on 2 out of total 1684 platforms (0.12%).
+2026-08-16 14:13:22,221 - twister - INFO - [32m14[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-08-16 14:13:22,221 - twister - INFO - Saving reports...
+2026-08-16 14:13:22,221 - twister - INFO - Writing JSON report /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/twister.json
+2026-08-16 14:13:22,226 - twister - INFO - Writing xunit report /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/twister.xml...
+2026-08-16 14:13:22,251 - twister - INFO - Writing xunit report /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/twister_report.xml...
+2026-08-16 14:13:22,259 - twister - INFO - Writing target report for qemu_m68k/qemu_virt_m68k_m68000...
+2026-08-16 14:13:22,261 - twister - INFO - Writing JSON report /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68000.json
+2026-08-16 14:13:22,262 - twister - INFO - Writing target report for qemu_m68k/qemu_virt_m68k_m68010...
+2026-08-16 14:13:22,264 - twister - INFO - Writing JSON report /workspace/scratch/1b6e38f66c85/kqueue-ab-final/baseline/qemu_m68k_qemu_virt_m68k_m68010.json
+2026-08-16 14:13:22,265 - twister - INFO - -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+2026-08-16 14:13:22,265 - twister - INFO - The following issues were found (showing the top 10 items):
+2026-08-16 14:13:22,266 - twister - INFO - 1) kernel.fifo.timeout on qemu_m68k/qemu_virt_m68k_m68000 (zephyr/gnu) failed (Timeout)
+2026-08-16 14:13:22,266 - twister - INFO - 2) kernel.fifo.timeout on qemu_m68k/qemu_virt_m68k_m68010 (zephyr/gnu) failed (Timeout)
+2026-08-16 14:13:22,266 - twister - INFO - 3) kernel.fifo on qemu_m68k/qemu_virt_m68k_m68000 (zephyr/gnu) failed (Timeout)
+2026-08-16 14:13:22,266 - twister - INFO - 4) kernel.fifo on qemu_m68k/qemu_virt_m68k_m68010 (zephyr/gnu) failed (Timeout)
+2026-08-16 14:13:22,266 - twister - INFO - 5) kernel.fifo.usage on qemu_m68k/qemu_virt_m68k_m68000 (zephyr/gnu) failed (Timeout)
+2026-08-16 14:13:22,266 - twister - INFO - 6) kernel.fifo.usage on qemu_m68k/qemu_virt_m68k_m68010 (zephyr/gnu) failed (Timeout)
+2026-08-16 14:13:22,266 - twister - INFO - 7) kernel.lifo.usage on qemu_m68k/qemu_virt_m68k_m68000 (zephyr/gnu) failed (Timeout)
+2026-08-16 14:13:22,266 - twister - INFO - 8) kernel.lifo.usage on qemu_m68k/qemu_virt_m68k_m68010 (zephyr/gnu) failed (Timeout)
+2026-08-16 14:13:22,266 - twister - INFO - 9) kernel.lifo on qemu_m68k/qemu_virt_m68k_m68000 (zephyr/gnu) failed (Timeout)
+2026-08-16 14:13:22,266 - twister - INFO - 10) kernel.lifo on qemu_m68k/qemu_virt_m68k_m68010 (zephyr/gnu) failed (Timeout)
+2026-08-16 14:13:22,266 - twister - INFO - 
+2026-08-16 14:13:22,266 - twister - INFO - To rerun the tests, call twister using the following commandline:
+2026-08-16 14:13:22,266 - twister - INFO - west twister -p <PLATFORM> -s <TEST ID>, for example:
+2026-08-16 14:13:22,266 - twister - INFO - 
+2026-08-16 14:13:22,266 - twister - INFO - west twister -p qemu_m68k/qemu_virt_m68k_m68010 -s kernel.lifo
+2026-08-16 14:13:22,266 - twister - INFO - or with west:
+2026-08-16 14:13:22,266 - twister - INFO - west build -p -b qemu_m68k/qemu_virt_m68k_m68010 tests/kernel/lifo/lifo_api -T kernel.lifo
+2026-08-16 14:13:22,266 - twister - INFO - -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+2026-08-16 14:13:22,266 - twister - INFO - Run completed

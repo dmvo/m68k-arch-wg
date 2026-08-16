@@ -1,0 +1,48 @@
+*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_api
+===================================================================
+START - test_fifo_alloc_put
+ PASS - test_fifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_fifo_define
+ PASS - test_fifo_define in 0.001 seconds
+===================================================================
+START - test_fifo_get_fail
+ PASS - test_fifo_get_fail in 0.108 seconds
+===================================================================
+START - test_fifo_is_empty_isr
+ PASS - test_fifo_is_empty_isr in 0.001 seconds
+===================================================================
+START - test_fifo_is_empty_thread
+ PASS - test_fifo_is_empty_thread in 0.001 seconds
+===================================================================
+START - test_fifo_isr2thread
+ PASS - test_fifo_isr2thread in 0.001 seconds
+===================================================================
+START - test_fifo_peek
+ PASS - test_fifo_peek in 0.001 seconds
+===================================================================
+START - test_fifo_put_list_order
+ PASS - test_fifo_put_list_order in 0.001 seconds
+===================================================================
+START - test_fifo_put_slist_order
+ PASS - test_fifo_put_slist_order in 0.001 seconds
+===================================================================
+START - test_fifo_thread2isr
+ PASS - test_fifo_thread2isr in 0.001 seconds
+===================================================================
+TESTSUITE fifo_api succeeded
+Running TESTSUITE fifo_api_1cpu
+===================================================================
+START - test_fifo_cancel_wait
+ PASS - test_fifo_cancel_wait in 0.112 seconds
+===================================================================
+START - test_fifo_loop
+* Pass data by fifo in loop 0
+main fifo put ---> isr fifo get
+E: heap corruption (double free?) at 0xcf22
+E: vector: 46  pc: 0x00003556  sr: 0x2700
+E: format/vector: 0x0000
+E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xd00c (test_fifo_loop)
+E: Halting system

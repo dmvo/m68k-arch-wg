@@ -1,0 +1,14 @@
+*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE queue_api
+===================================================================
+START - test_access_kernel_obj_with_priv_data
+ PASS - test_access_kernel_obj_with_priv_data in 0.001 seconds
+===================================================================
+START - test_multiple_queues
+ASSERTION FAIL [z_spin_lock_valid(l)] @ WEST_TOPDIR/zephyr/include/zephyr/spinlock.h:143
+	Invalid spinlock 0x14
+E: vector: 46  pc: 0x0000476c  sr: 0x2700
+E: >>> ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0xf050 (test_multiple_queues)
+Caught system error -- reason 4 0
+Fatal error was unexpected, aborting...

@@ -1,0 +1,422 @@
+diff --git a/doc/kernel/services/data_passing/fifos.rst b/doc/kernel/services/data_passing/fifos.rst
+index 5bc2380e897e846fa40f4d31f5c6b7eec29ad5b9..3e5490423fe77c69575f2bb054f1b87b9fa68888 100644
+--- a/doc/kernel/services/data_passing/fifos.rst
++++ b/doc/kernel/services/data_passing/fifos.rst
+@@ -24,11 +24,11 @@ A FIFO has the following key properties:
+ 
+ A FIFO must be initialized before it can be used. This sets its queue to empty.
+ 
+-FIFO data items must be aligned on a word boundary, as the kernel reserves
+-the first word of an item for use as a pointer to the next data item in
+-the queue. Consequently, a data item that holds N bytes of application
+-data requires N+4 (or N+8) bytes of memory. There are no alignment or
+-reserved space requirements for data items if they are added with
++FIFO data items must be aligned as required for a pointer, as the kernel
++reserves the first pointer-sized field of an item for use as a pointer to the
++next data item in the queue. Consequently, a data item that holds N bytes of
++application data requires N+4 (or N+8) bytes of memory. There are no alignment
++or reserved space requirements for data items if they are added with
+ :c:func:`k_fifo_alloc_put`, instead additional memory is temporarily
+ allocated from the calling thread's resource pool.
+ 
+diff --git a/doc/kernel/services/data_passing/lifos.rst b/doc/kernel/services/data_passing/lifos.rst
+index b90e69c10c7cfdf7204bda6e75b6e770a8a0a6d5..b893a0e15c4aee9ec2e51de86f1b62531614cf30 100644
+--- a/doc/kernel/services/data_passing/lifos.rst
++++ b/doc/kernel/services/data_passing/lifos.rst
+@@ -24,11 +24,11 @@ A LIFO has the following key properties:
+ 
+ A LIFO must be initialized before it can be used. This sets its queue to empty.
+ 
+-LIFO data items must be aligned on a word boundary, as the kernel reserves
+-the first word of an item for use as a pointer to the next data item in the
+-queue. Consequently, a data item that holds N bytes of application data
+-requires N+4 (or N+8) bytes of memory. There are no alignment or reserved
+-space requirements for data items if they are added with
++LIFO data items must be aligned as required for a pointer, as the kernel
++reserves the first pointer-sized field of an item for use as a pointer to the
++next data item in the queue. Consequently, a data item that holds N bytes of
++application data requires N+4 (or N+8) bytes of memory. There are no alignment
++or reserved space requirements for data items if they are added with
+ :c:func:`k_lifo_alloc_put`, instead additional memory is temporarily
+ allocated from the calling thread's resource pool.
+ 
+diff --git a/include/zephyr/kernel.h b/include/zephyr/kernel.h
+index 81fe7ca979d4024a32e0896bc729ff14188ed9cf..4e269189b29a5f3835e0bf1bb4991acdf052ab72 100644
+--- a/include/zephyr/kernel.h
++++ b/include/zephyr/kernel.h
+@@ -2377,7 +2377,7 @@ struct k_queue {
+ /**
+  * @cond INTERNAL_HIDDEN
+  */
+-	sys_sflist_t data_q;
++	sys_slist_t data_q;
+ 	struct k_spinlock lock;
+ 	_wait_q_t wait_q;
+ 
+@@ -2394,7 +2394,7 @@ struct k_queue {
+  */
+ #define Z_QUEUE_INITIALIZER(obj) \
+ 	{ \
+-	.data_q = SYS_SFLIST_STATIC_INIT(&obj.data_q), \
++	.data_q = SYS_SLIST_STATIC_INIT(&obj.data_q), \
+ 	.lock = { }, \
+ 	.wait_q = Z_WAIT_Q_INIT(&obj.wait_q),	\
+ 	Z_POLL_EVENT_OBJ_INIT(obj)		\
+@@ -2437,8 +2437,8 @@ __syscall void k_queue_cancel_wait(struct k_queue *queue);
+  * @brief Append an element to the end of a queue.
+  *
+  * This routine appends a data item to @a queue. A queue data item must be
+- * aligned on a word boundary, and the first word of the item is reserved
+- * for the kernel's use.
++ * aligned as required for a pointer, and its first pointer-sized field is
++ * reserved for the kernel's use.
+  *
+  * @isr_ok
+  *
+@@ -2469,8 +2469,8 @@ __syscall int32_t k_queue_alloc_append(struct k_queue *queue, void *data);
+  * @brief Prepend an element to a queue.
+  *
+  * This routine prepends a data item to @a queue. A queue data item must be
+- * aligned on a word boundary, and the first word of the item is reserved
+- * for the kernel's use.
++ * aligned as required for a pointer, and its first pointer-sized field is
++ * reserved for the kernel's use.
+  *
+  * @isr_ok
+  *
+@@ -2501,8 +2501,8 @@ __syscall int32_t k_queue_alloc_prepend(struct k_queue *queue, void *data);
+  * @brief Inserts an element to a queue.
+  *
+  * This routine inserts a data item to @a queue after previous item. A queue
+- * data item must be aligned on a word boundary, and the first word of
+- * the item is reserved for the kernel's use.
++ * data item must be aligned as required for a pointer, and its first
++ * pointer-sized field is reserved for the kernel's use.
+  *
+  * @isr_ok
+  *
+@@ -2516,8 +2516,8 @@ void k_queue_insert(struct k_queue *queue, void *prev, void *data);
+  * @brief Atomically append a list of elements to a queue.
+  *
+  * This routine adds a list of data items to @a queue in one operation.
+- * The data items must be in a singly-linked list, with the first word
+- * in each data item pointing to the next data item; the list must be
++ * The data items must be in a singly-linked list, with the first pointer-sized
++ * field in each data item pointing to the next data item; the list must be
+  * NULL-terminated.
+  *
+  * @isr_ok
+@@ -2554,8 +2554,8 @@ int k_queue_merge_slist(struct k_queue *queue, sys_slist_t *list);
+ /**
+  * @brief Get an element from a queue.
+  *
+- * This routine removes first data item from @a queue. The first word of the
+- * data item is reserved for the kernel's use.
++ * This routine removes first data item from @a queue. The first pointer-sized
++ * field of the data item is reserved for the kernel's use.
+  *
+  * @note @a timeout must be set to K_NO_WAIT if called from ISR.
+  *
+@@ -2573,9 +2573,9 @@ __syscall void *k_queue_get(struct k_queue *queue, k_timeout_t timeout);
+ /**
+  * @brief Remove an element from a queue.
+  *
+- * This routine removes data item from @a queue. The first word of the
+- * data item is reserved for the kernel's use. Removing elements from k_queue
+- * rely on sys_slist_find_and_remove which is not a constant time operation.
++ * This routine removes data item from @a queue. The first pointer-sized field
++ * of the data item is reserved for the kernel's use. Removing elements from
++ * k_queue rely on sys_slist_find_and_remove which is not a constant time operation.
+  *
+  * @isr_ok
+  *
+@@ -2589,9 +2589,9 @@ bool k_queue_remove(struct k_queue *queue, void *data);
+ /**
+  * @brief Append an element to a queue only if it's not present already.
+  *
+- * This routine appends data item to @a queue. The first word of the data
+- * item is reserved for the kernel's use. Appending elements to k_queue
+- * relies on sys_slist_is_node_in_list which is not a constant time operation.
++ * This routine appends data item to @a queue. The first pointer-sized field of
++ * the data item is reserved for the kernel's use. Appending elements to
++ * k_queue relies on sys_slist_is_node_in_list which is not a constant time operation.
+  *
+  * @isr_ok
+  *
+@@ -2619,7 +2619,7 @@ __syscall int k_queue_is_empty(struct k_queue *queue);
+ 
+ static inline int z_impl_k_queue_is_empty(struct k_queue *queue)
+ {
+-	return sys_sflist_is_empty(&queue->data_q) ? 1 : 0;
++	return sys_slist_is_empty(&queue->data_q) ? 1 : 0;
+ }
+ 
+ /**
+@@ -3087,8 +3087,8 @@ struct k_fifo {
+ /**
+  * @brief Add an element to a FIFO queue.
+  *
+- * This routine adds a data item to @a fifo. A FIFO data item must be
+- * aligned on a word boundary, and the first word of the item is reserved
++ * This routine adds a data item to @a fifo. A FIFO data item must be aligned
++ * as required for a pointer, and its first pointer-sized field is reserved
+  * for the kernel's use.
+  *
+  * @isr_ok
+@@ -3133,8 +3133,8 @@ struct k_fifo {
+  * @brief Atomically add a list of elements to a FIFO.
+  *
+  * This routine adds a list of data items to @a fifo in one operation.
+- * The data items must be in a singly-linked list, with the first word of
+- * each data item pointing to the next data item; the list must be
++ * The data items must be in a singly-linked list, with the first pointer-sized
++ * field in each data item pointing to the next data item; the list must be
+  * NULL-terminated.
+  *
+  * @isr_ok
+@@ -3180,7 +3180,8 @@ struct k_fifo {
+  * @brief Get an element from a FIFO queue.
+  *
+  * This routine removes a data item from @a fifo in a "first in, first out"
+- * manner. The first word of the data item is reserved for the kernel's use.
++ * manner. The first pointer-sized field of the data item is reserved for the
++ * kernel's use.
+  *
+  * @note @a timeout must be set to K_NO_WAIT if called from ISR.
+  *
+@@ -3327,7 +3328,7 @@ struct k_lifo {
+  * @brief Add an element to a LIFO queue.
+  *
+  * This routine adds a data item to @a lifo. A LIFO queue data item must be
+- * aligned on a word boundary, and the first word of the item is
++ * aligned as required for a pointer, and its first pointer-sized field is
+  * reserved for the kernel's use.
+  *
+  * @isr_ok
+@@ -3372,7 +3373,8 @@ struct k_lifo {
+  * @brief Get an element from a LIFO queue.
+  *
+  * This routine removes a data item from @a LIFO in a "last in, first out"
+- * manner. The first word of the data item is reserved for the kernel's use.
++ * manner. The first pointer-sized field of the data item is reserved for the
++ * kernel's use.
+  *
+  * @note @a timeout must be set to K_NO_WAIT if called from ISR.
+  *
+diff --git a/kernel/queue.c b/kernel/queue.c
+index 7ef935fd0042b336d35306f5a68829e0bb965f58..2c371c2c19a59e4b678db69b6821b32f5e84244f 100644
+--- a/kernel/queue.c
++++ b/kernel/queue.c
+@@ -19,20 +19,90 @@
+ #include <scheduler.h>
+ #include <zephyr/init.h>
+ #include <zephyr/internal/syscall_handler.h>
++#include <zephyr/sys/list_gen.h>
+ #include <kernel_internal.h>
+ #include <zephyr/sys/check.h>
+ 
++#define Z_QUEUE_NODE_FLAG_ALLOCATED BIT(0)
++
++/*
++ * A queue stores either caller-owned objects or allocated wrappers. Bit 0 of
++ * next_and_flags is clear for a caller-owned object and set for a wrapper.
++ * No other flag bits are needed.
++ */
++struct z_queue_node {
++	uintptr_t next_and_flags;
++};
++
++typedef struct z_queue_node sys_queue_node_t;
++typedef sys_slist_t sys_queue_list_t;
++
++BUILD_ASSERT(__alignof__(sys_queue_node_t) >= 2, "k_queue requires one free pointer bit");
++
++static inline uintptr_t z_queue_node_flags_get(const sys_queue_node_t *node)
++{
++	return node->next_and_flags & Z_QUEUE_NODE_FLAG_ALLOCATED;
++}
++
++static inline void z_queue_node_init(sys_queue_node_t *node, uintptr_t flags)
++{
++	__ASSERT((flags & ~(uintptr_t)Z_QUEUE_NODE_FLAG_ALLOCATED) == 0U,
++		 "invalid k_queue node flags");
++	node->next_and_flags = flags;
++}
++
++static inline sys_queue_node_t *z_queue_node_next_peek(const sys_queue_node_t *node)
++{
++	return (sys_queue_node_t *)(node->next_and_flags & ~(uintptr_t)Z_QUEUE_NODE_FLAG_ALLOCATED);
++}
++
++static inline void z_queue_node_next_set(sys_queue_node_t *parent, sys_queue_node_t *child)
++{
++	parent->next_and_flags = z_queue_node_flags_get(parent) | (uintptr_t)child;
++}
++
++static inline void z_queue_list_head_set(sys_queue_list_t *list, sys_queue_node_t *node)
++{
++	z_slist_head_set(list, (sys_snode_t *)node);
++}
++
++static inline void z_queue_list_tail_set(sys_queue_list_t *list, sys_queue_node_t *node)
++{
++	z_slist_tail_set(list, (sys_snode_t *)node);
++}
++
++static inline sys_queue_node_t *sys_queue_list_peek_head(const sys_queue_list_t *list)
++{
++	return (sys_queue_node_t *)sys_slist_peek_head(list);
++}
++
++static inline sys_queue_node_t *sys_queue_list_peek_tail(const sys_queue_list_t *list)
++{
++	return (sys_queue_node_t *)sys_slist_peek_tail(list);
++}
++
++Z_GENLIST_IS_EMPTY(queue_list)
++Z_GENLIST_PEEK_NEXT_NO_CHECK(queue_list, queue_node)
++Z_GENLIST_PEEK_NEXT(queue_list, queue_node)
++Z_GENLIST_PREPEND(queue_list, queue_node)
++Z_GENLIST_APPEND(queue_list, queue_node)
++Z_GENLIST_APPEND_LIST(queue_list, queue_node)
++Z_GENLIST_INSERT(queue_list, queue_node)
++Z_GENLIST_GET_NOT_EMPTY(queue_list, queue_node)
++Z_GENLIST_REMOVE(queue_list, queue_node)
++Z_GENLIST_FIND_AND_REMOVE(queue_list, queue_node)
++
+ struct alloc_node {
+-	sys_sfnode_t node;
++	sys_queue_node_t node;
+ 	void *data;
+ };
+ 
+ /* The queue must have its spinlock held before calling this function. */
+-static void *z_queue_node_peek(sys_sfnode_t *node, bool needs_free)
++static void *z_queue_node_peek(sys_queue_node_t *node, bool needs_free)
+ {
+ 	void *ret;
+ 
+-	if ((node != NULL) && (sys_sfnode_flags_get(node) != (uint8_t)0)) {
++	if ((node != NULL) && (z_queue_node_flags_get(node) == Z_QUEUE_NODE_FLAG_ALLOCATED)) {
+ 		/* If the flag is set, then the enqueue operation for this item
+ 		 * did a behind-the scenes memory allocation of an alloc_node
+ 		 * struct, which is what got put in the queue. Free it and pass
+@@ -46,7 +116,7 @@ static void *z_queue_node_peek(sys_sfnode_t *node, bool needs_free)
+ 			k_free(anode);
+ 		}
+ 	} else {
+-		/* Data was directly placed in the queue, the first word
++		/* Data was directly placed in the queue, the first pointer-sized field
+ 		 * reserved for the linked list. User mode isn't allowed to
+ 		 * do this, although it can get data sent this way.
+ 		 */
+@@ -58,7 +128,7 @@ static void *z_queue_node_peek(sys_sfnode_t *node, bool needs_free)
+ 
+ void z_impl_k_queue_init(struct k_queue *queue)
+ {
+-	sys_sflist_init(&queue->data_q);
++	sys_slist_init(&queue->data_q);
+ 	queue->lock = (struct k_spinlock) {};
+ 	z_waitq_init(&queue->wait_q);
+ #if defined(CONFIG_POLL)
+@@ -134,7 +204,7 @@ static int32_t queue_insert(struct k_queue *queue, void *prev, void *data,
+ 	SYS_PORT_TRACING_OBJ_FUNC_ENTER(k_queue, queue_insert, queue, alloc);
+ 
+ 	if (is_append) {
+-		prev = sys_sflist_peek_tail(&queue->data_q);
++		prev = sys_queue_list_peek_tail(&queue->data_q);
+ 	}
+ 
+ 	if (z_sched_wake(&queue->wait_q, 0, data)) {
+@@ -153,13 +223,13 @@ static int32_t queue_insert(struct k_queue *queue, void *prev, void *data,
+ 			goto out;
+ 		}
+ 		anode->data = data;
+-		sys_sfnode_init(&anode->node, 0x1);
++		z_queue_node_init(&anode->node, Z_QUEUE_NODE_FLAG_ALLOCATED);
+ 		data = anode;
+ 	} else {
+-		sys_sfnode_init(data, 0x0);
++		z_queue_node_init(data, 0U);
+ 	}
+ 
+-	sys_sflist_insert(&queue->data_q, prev, data);
++	sys_queue_list_insert(&queue->data_q, prev, data);
+ 	resched = queue_handle_poll_events(queue, K_POLL_STATE_DATA_AVAILABLE);
+ 
+ out:
+@@ -268,7 +338,7 @@ int k_queue_append_list(struct k_queue *queue, void *head, void *tail)
+ 	}
+ 
+ 	if (head != NULL) {
+-		sys_sflist_append_list(&queue->data_q, head, tail);
++		sys_queue_list_append_list(&queue->data_q, head, tail);
+ 	}
+ 
+ 	SYS_PORT_TRACING_OBJ_FUNC_EXIT(k_queue, append_list, queue, 0);
+@@ -302,9 +372,8 @@ int k_queue_merge_slist(struct k_queue *queue, sys_slist_t *list)
+ 	 * - the slist implementation keeps the next pointer as the first
+ 	 *   field of the node object type
+ 	 * - list->tail->next = NULL.
+-	 * - sflist implementation only differs from slist by stuffing
+-	 *   flag bytes in the lower order bits of the data pointer
+-	 * - source list is really an slist and not an sflist with flags set
++	 * - the queue list uses bit 0 of each next pointer as its only flag
++	 * - the source is an ordinary slist and has no tagged links
+ 	 */
+ 	ret = k_queue_append_list(queue, list->head, list->tail);
+ 	CHECKIF(ret != 0) {
+@@ -326,10 +395,10 @@ void *z_impl_k_queue_get(struct k_queue *queue, k_timeout_t timeout)
+ 
+ 	SYS_PORT_TRACING_OBJ_FUNC_ENTER(k_queue, get, queue, timeout);
+ 
+-	if (likely(!sys_sflist_is_empty(&queue->data_q))) {
+-		sys_sfnode_t *node;
++	if (likely(!sys_queue_list_is_empty(&queue->data_q))) {
++		sys_queue_node_t *node;
+ 
+-		node = sys_sflist_get_not_empty(&queue->data_q);
++		node = sys_queue_list_get_not_empty(&queue->data_q);
+ 		data = z_queue_node_peek(node, true);
+ 		k_spin_unlock(&queue->lock, key);
+ 
+@@ -360,7 +429,7 @@ bool k_queue_remove(struct k_queue *queue, void *data)
+ {
+ 	SYS_PORT_TRACING_OBJ_FUNC_ENTER(k_queue, remove, queue);
+ 	k_spinlock_key_t key = k_spin_lock(&queue->lock);
+-	bool ret = sys_sflist_find_and_remove(&queue->data_q, (sys_sfnode_t *)data);
++	bool ret = sys_queue_list_find_and_remove(&queue->data_q, (sys_queue_node_t *)data);
+ 
+ 	k_spin_unlock(&queue->lock, key);
+ 
+@@ -374,10 +443,10 @@ bool k_queue_unique_append(struct k_queue *queue, void *data)
+ 	SYS_PORT_TRACING_OBJ_FUNC_ENTER(k_queue, unique_append, queue);
+ 	k_spinlock_key_t key = k_spin_lock(&queue->lock);
+ 
+-	sys_sfnode_t *test;
++	sys_queue_node_t *test;
+ 
+-	SYS_SFLIST_FOR_EACH_NODE(&queue->data_q, test) {
+-		if (test == (sys_sfnode_t *) data) {
++	Z_GENLIST_FOR_EACH_NODE(queue_list, &queue->data_q, test) {
++		if (test == (sys_queue_node_t *)data) {
+ 			k_spin_unlock(&queue->lock, key);
+ 			SYS_PORT_TRACING_OBJ_FUNC_EXIT(k_queue, unique_append, queue, false);
+ 
+@@ -395,7 +464,7 @@ bool k_queue_unique_append(struct k_queue *queue, void *data)
+ void *z_impl_k_queue_peek_head(struct k_queue *queue)
+ {
+ 	k_spinlock_key_t key = k_spin_lock(&queue->lock);
+-	void *ret = z_queue_node_peek(sys_sflist_peek_head(&queue->data_q), false);
++	void *ret = z_queue_node_peek(sys_queue_list_peek_head(&queue->data_q), false);
+ 
+ 	k_spin_unlock(&queue->lock, key);
+ 
+@@ -407,7 +476,7 @@ void *z_impl_k_queue_peek_head(struct k_queue *queue)
+ void *z_impl_k_queue_peek_tail(struct k_queue *queue)
+ {
+ 	k_spinlock_key_t key = k_spin_lock(&queue->lock);
+-	void *ret = z_queue_node_peek(sys_sflist_peek_tail(&queue->data_q), false);
++	void *ret = z_queue_node_peek(sys_queue_list_peek_tail(&queue->data_q), false);
+ 
+ 	k_spin_unlock(&queue->lock, key);

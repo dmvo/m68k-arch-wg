@@ -1,0 +1,231 @@
+*** Booting Zephyr OS build 4.4.99 ***
+Running TESTSUITE fifo_api
+===================================================================
+START - test_fifo_alloc_put
+ PASS - test_fifo_alloc_put in 0.001 seconds
+===================================================================
+START - test_fifo_define
+ PASS - test_fifo_define in 0.001 seconds
+===================================================================
+START - test_fifo_get_fail
+ PASS - test_fifo_get_fail in 0.108 seconds
+===================================================================
+START - test_fifo_is_empty_isr
+ PASS - test_fifo_is_empty_isr in 0.001 seconds
+===================================================================
+START - test_fifo_is_empty_thread
+ PASS - test_fifo_is_empty_thread in 0.001 seconds
+===================================================================
+START - test_fifo_isr2thread
+ PASS - test_fifo_isr2thread in 0.001 seconds
+===================================================================
+START - test_fifo_peek
+ PASS - test_fifo_peek in 0.001 seconds
+===================================================================
+START - test_fifo_put_list_order
+ PASS - test_fifo_put_list_order in 0.001 seconds
+===================================================================
+START - test_fifo_put_slist_order
+ PASS - test_fifo_put_slist_order in 0.001 seconds
+===================================================================
+START - test_fifo_thread2isr
+ PASS - test_fifo_thread2isr in 0.001 seconds
+===================================================================
+TESTSUITE fifo_api succeeded
+Running TESTSUITE fifo_api_1cpu
+===================================================================
+START - test_fifo_cancel_wait
+ PASS - test_fifo_cancel_wait in 0.112 seconds
+===================================================================
+START - test_fifo_loop
+* Pass data by fifo in loop 0
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 1
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 2
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 3
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 4
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 5
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 6
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 7
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 8
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 9
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 10
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 11
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 12
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 13
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 14
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 15
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 16
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 17
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 18
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 19
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 20
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 21
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 22
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 23
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 24
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 25
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 26
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 27
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 28
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 29
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 30
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+* Pass data by fifo in loop 31
+main fifo put ---> isr fifo get
+isr fifo put ---> thread fifo get
+thread fifo put ---> main fifo get
+
+ PASS - test_fifo_loop in 0.037 seconds
+===================================================================
+START - test_fifo_thread2thread
+ PASS - test_fifo_thread2thread in 0.001 seconds
+===================================================================
+TESTSUITE fifo_api_1cpu succeeded
+
+------ TESTSUITE SUMMARY START ------
+
+SUITE PASS - 100.00% [fifo_api]: pass = 10, fail = 0, skip = 0, total = 10 duration = 0.117 seconds
+ - PASS - [fifo_api.test_fifo_alloc_put] duration = 0.001 seconds
+ - PASS - [fifo_api.test_fifo_define] duration = 0.001 seconds
+ - PASS - [fifo_api.test_fifo_get_fail] duration = 0.108 seconds
+ - PASS - [fifo_api.test_fifo_is_empty_isr] duration = 0.001 seconds
+ - PASS - [fifo_api.test_fifo_is_empty_thread] duration = 0.001 seconds
+ - PASS - [fifo_api.test_fifo_isr2thread] duration = 0.001 seconds
+ - PASS - [fifo_api.test_fifo_peek] duration = 0.001 seconds
+ - PASS - [fifo_api.test_fifo_put_list_order] duration = 0.001 seconds
+ - PASS - [fifo_api.test_fifo_put_slist_order] duration = 0.001 seconds
+ - PASS - [fifo_api.test_fifo_thread2isr] duration = 0.001 seconds
+
+SUITE PASS - 100.00% [fifo_api_1cpu]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.150 seconds
+ - PASS - [fifo_api_1cpu.test_fifo_cancel_wait] duration = 0.112 seconds
+ - PASS - [fifo_api_1cpu.test_fifo_loop] duration = 0.037 seconds
+ - PASS - [fifo_api_1cpu.test_fifo_thread2thread] duration = 0.001 seconds
+
+------ TESTSUITE SUMMARY END ------
+
+===================================================================
+RunID: c447395009ee30d4731e35f00e59716b
+PROJECT EXECUTION SUCCESSFUL
